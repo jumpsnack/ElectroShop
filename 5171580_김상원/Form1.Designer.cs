@@ -28,8 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.Utils.Animation.Transition transition1 = new DevExpress.Utils.Animation.Transition();
+            DevExpress.Utils.Animation.FadeTransition fadeTransition1 = new DevExpress.Utils.Animation.FadeTransition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.lb_permission = new System.Windows.Forms.Label();
+            this.transitionManager1 = new DevExpress.Utils.Animation.TransitionManager();
+            this.lb_title = new System.Windows.Forms.Label();
+            this.panelInput = new System.Windows.Forms.Panel();
+            this.tb_email = new System.Windows.Forms.TextBox();
+            this.navigationBarMain = new DevExpress.XtraBars.Navigation.OfficeNavigationBar();
+            this.navigationBarItem1 = new DevExpress.XtraBars.Navigation.NavigationBarItem();
+            this.navigationBarItem2 = new DevExpress.XtraBars.Navigation.NavigationBarItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panelInput.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationBarMain)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lb_permission
+            // 
+            this.lb_permission.Font = new System.Drawing.Font("Myriad Hebrew", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_permission.Location = new System.Drawing.Point(291, 25);
+            this.lb_permission.Margin = new System.Windows.Forms.Padding(20, 6, 20, 6);
+            this.lb_permission.Name = "lb_permission";
+            this.lb_permission.Size = new System.Drawing.Size(110, 33);
+            this.lb_permission.TabIndex = 2;
+            this.lb_permission.Text = "Manager";
+            this.lb_permission.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_permission.Click += new System.EventHandler(this.ActionLabelPermission);
+            this.lb_permission.Paint += new System.Windows.Forms.PaintEventHandler(this.LabelPaint);
+            // 
+            // transitionManager1
+            // 
+            this.transitionManager1.FrameCount = 400;
+            transition1.Control = this.lb_permission;
+            transition1.LineWaitingIndicatorProperties.AnimationElementCount = 5;
+            transition1.LineWaitingIndicatorProperties.Caption = "";
+            transition1.LineWaitingIndicatorProperties.Description = "";
+            transition1.RingWaitingIndicatorProperties.AnimationElementCount = 5;
+            transition1.RingWaitingIndicatorProperties.Caption = "";
+            transition1.RingWaitingIndicatorProperties.Description = "";
+            transition1.ShowWaitingIndicator = DevExpress.Utils.DefaultBoolean.False;
+            transition1.TransitionType = fadeTransition1;
+            transition1.WaitingIndicatorProperties.Caption = "";
+            transition1.WaitingIndicatorProperties.Description = "";
+            this.transitionManager1.Transitions.Add(transition1);
+            // 
+            // lb_title
+            // 
+            this.lb_title.AutoSize = true;
+            this.lb_title.Font = new System.Drawing.Font("Myriad Hebrew", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_title.Location = new System.Drawing.Point(119, 27);
+            this.lb_title.Name = "lb_title";
+            this.lb_title.Size = new System.Drawing.Size(535, 116);
+            this.lb_title.TabIndex = 3;
+            this.lb_title.Text = "ElectroShop";
+            this.lb_title.Paint += new System.Windows.Forms.PaintEventHandler(this.LabelPaint);
+            // 
+            // panelInput
+            // 
+            this.panelInput.Controls.Add(this.textBox1);
+            this.panelInput.Controls.Add(this.tb_email);
+            this.panelInput.Controls.Add(this.lb_permission);
+            this.panelInput.Location = new System.Drawing.Point(43, 146);
+            this.panelInput.Name = "panelInput";
+            this.panelInput.Size = new System.Drawing.Size(700, 300);
+            this.panelInput.TabIndex = 4;
+            this.panelInput.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelInputPaint);
+            // 
+            // tb_email
+            // 
+            this.tb_email.BackColor = System.Drawing.SystemColors.Menu;
+            this.tb_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_email.Font = new System.Drawing.Font("Myriad Hebrew", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_email.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.tb_email.Location = new System.Drawing.Point(185, 85);
+            this.tb_email.Name = "tb_email";
+            this.tb_email.Size = new System.Drawing.Size(306, 33);
+            this.tb_email.TabIndex = 3;
+            this.tb_email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_email.WordWrap = false;
+            // 
+            // navigationBarMain
+            // 
+            this.navigationBarMain.CustomizationButtonVisibility = DevExpress.XtraBars.Navigation.CustomizationButtonVisibility.Hidden;
+            this.navigationBarMain.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.navigationBarMain.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.navigationBarMain.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.navigationBarMain.Items.AddRange(new DevExpress.XtraBars.Navigation.NavigationBarItem[] {
+            this.navigationBarItem1,
+            this.navigationBarItem2});
+            this.navigationBarMain.Location = new System.Drawing.Point(0, 515);
+            this.navigationBarMain.Name = "navigationBarMain";
+            this.navigationBarMain.SelectedItem = this.navigationBarItem1;
+            this.navigationBarMain.ShowToolTips = false;
+            this.navigationBarMain.Size = new System.Drawing.Size(784, 46);
+            this.navigationBarMain.TabIndex = 5;
+            this.navigationBarMain.Text = "officeNavigationBar1";
+            this.navigationBarMain.Paint += new System.Windows.Forms.PaintEventHandler(this.NavigationBarMainPaint);
+            // 
+            // navigationBarItem1
+            // 
+            this.navigationBarItem1.Name = "navigationBarItem1";
+            this.navigationBarItem1.Text = "Employee";
+            // 
+            // navigationBarItem2
+            // 
+            this.navigationBarItem2.Name = "navigationBarItem2";
+            this.navigationBarItem2.Text = "Customer";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Myriad Hebrew", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox1.Location = new System.Drawing.Point(185, 117);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(306, 33);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.WordWrap = false;
             // 
             // Form1
             // 
@@ -39,15 +157,32 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.navigationBarMain);
+            this.Controls.Add(this.panelInput);
+            this.Controls.Add(this.lb_title);
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "5171580_김상원";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FromClosing);
+            this.panelInput.ResumeLayout(false);
+            this.panelInput.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationBarMain)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+        private DevExpress.Utils.Animation.TransitionManager transitionManager1;
+        private System.Windows.Forms.Label lb_permission;
+        private System.Windows.Forms.Label lb_title;
+        private System.Windows.Forms.Panel panelInput;
+        private DevExpress.XtraBars.Navigation.NavigationBarItem navigationBarItem1;
+        private DevExpress.XtraBars.Navigation.NavigationBarItem navigationBarItem2;
+        private DevExpress.XtraBars.Navigation.OfficeNavigationBar navigationBarMain;
+        private System.Windows.Forms.TextBox tb_email;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
