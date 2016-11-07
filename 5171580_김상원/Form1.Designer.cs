@@ -50,7 +50,7 @@
             // lb_permission
             // 
             this.lb_permission.BackColor = System.Drawing.Color.Transparent;
-            this.lb_permission.Font = new System.Drawing.Font("Myriad Hebrew", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_permission.Font = new System.Drawing.Font("Myriad Pro", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_permission.Location = new System.Drawing.Point(327, 185);
             this.lb_permission.Margin = new System.Windows.Forms.Padding(20, 6, 20, 6);
             this.lb_permission.Name = "lb_permission";
@@ -64,7 +64,7 @@
             // lb_join
             // 
             this.lb_join.BackColor = System.Drawing.Color.Transparent;
-            this.lb_join.Font = new System.Drawing.Font("Myriad Hebrew", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_join.Font = new System.Drawing.Font("Myriad Pro SemiExt", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_join.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lb_join.Location = new System.Drawing.Point(422, 364);
             this.lb_join.Name = "lb_join";
@@ -94,10 +94,10 @@
             // 
             this.lb_title.AutoSize = true;
             this.lb_title.BackColor = System.Drawing.Color.Transparent;
-            this.lb_title.Font = new System.Drawing.Font("Myriad Hebrew", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_title.Font = new System.Drawing.Font("Myriad Pro", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_title.Location = new System.Drawing.Point(119, 27);
             this.lb_title.Name = "lb_title";
-            this.lb_title.Size = new System.Drawing.Size(535, 116);
+            this.lb_title.Size = new System.Drawing.Size(532, 109);
             this.lb_title.TabIndex = 3;
             this.lb_title.Text = "ElectroShop";
             this.lb_title.Paint += new System.Windows.Forms.PaintEventHandler(this.LabelPaint);
@@ -106,7 +106,7 @@
             // 
             this.tb_password.BackColor = System.Drawing.SystemColors.Menu;
             this.tb_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_password.Font = new System.Drawing.Font("Myriad Hebrew", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_password.Font = new System.Drawing.Font("Myriad Pro", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_password.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_password.Location = new System.Drawing.Point(233, 257);
             this.tb_password.Name = "tb_password";
@@ -121,7 +121,7 @@
             // 
             this.tb_email.BackColor = System.Drawing.SystemColors.Menu;
             this.tb_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_email.Font = new System.Drawing.Font("Myriad Hebrew", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_email.Font = new System.Drawing.Font("Myriad Pro", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_email.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_email.Location = new System.Drawing.Point(233, 227);
             this.tb_email.Name = "tb_email";
@@ -164,11 +164,11 @@
             // 
             this.lb_login.AutoSize = true;
             this.lb_login.BackColor = System.Drawing.Color.Transparent;
-            this.lb_login.Font = new System.Drawing.Font("Myriad Hebrew", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_login.Font = new System.Drawing.Font("Myriad Pro SemiExt", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_login.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lb_login.Location = new System.Drawing.Point(276, 358);
             this.lb_login.Name = "lb_login";
-            this.lb_login.Size = new System.Drawing.Size(88, 29);
+            this.lb_login.Size = new System.Drawing.Size(94, 27);
             this.lb_login.TabIndex = 4;
             this.lb_login.Text = "Login >";
             this.lb_login.Click += new System.EventHandler(this.ActionLabelLogin);
