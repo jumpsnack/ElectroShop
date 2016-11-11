@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.Utils.Animation.Transition transition1 = new DevExpress.Utils.Animation.Transition();
-            DevExpress.Utils.Animation.FadeTransition fadeTransition1 = new DevExpress.Utils.Animation.FadeTransition();
-            DevExpress.Utils.Animation.Transition transition2 = new DevExpress.Utils.Animation.Transition();
-            DevExpress.Utils.Animation.FadeTransition fadeTransition2 = new DevExpress.Utils.Animation.FadeTransition();
+            DevExpress.Utils.Animation.Transition transition7 = new DevExpress.Utils.Animation.Transition();
+            DevExpress.Utils.Animation.FadeTransition fadeTransition7 = new DevExpress.Utils.Animation.FadeTransition();
+            DevExpress.Utils.Animation.Transition transition8 = new DevExpress.Utils.Animation.Transition();
+            DevExpress.Utils.Animation.FadeTransition fadeTransition8 = new DevExpress.Utils.Animation.FadeTransition();
+            DevExpress.Utils.Animation.Transition transition9 = new DevExpress.Utils.Animation.Transition();
+            DevExpress.Utils.Animation.FadeTransition fadeTransition9 = new DevExpress.Utils.Animation.FadeTransition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lb_permission = new System.Windows.Forms.Label();
             this.lb_join = new System.Windows.Forms.Label();
@@ -44,7 +46,15 @@
             this.navigationBarItem2 = new DevExpress.XtraBars.Navigation.NavigationBarItem();
             this.lb_login = new System.Windows.Forms.Label();
             this.transitionManager2 = new DevExpress.Utils.Animation.TransitionManager();
+            this.dataSet11 = new _5171580_김상원.DataSet1();
+            this.tableAdapterManager1 = new _5171580_김상원.DataSet1TableAdapters.TableAdapterManager();
+            this.oracleConnection1 = new System.Data.OracleClient.OracleConnection();
+            this.customersTableAdapter1 = new _5171580_김상원.DataSet1TableAdapters.CUSTOMERSTableAdapter();
+            this.managerTableAdapter1 = new _5171580_김상원.DataSet1TableAdapters.MANAGERTableAdapter();
+            this.staffTableAdapter1 = new _5171580_김상원.DataSet1TableAdapters.STAFFTableAdapter();
+            this.transitionManager3 = new DevExpress.Utils.Animation.TransitionManager();
             ((System.ComponentModel.ISupportInitialize)(this.navigationBarMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_permission
@@ -77,18 +87,18 @@
             // transitionManager1
             // 
             this.transitionManager1.FrameCount = 400;
-            transition1.Control = this.lb_permission;
-            transition1.LineWaitingIndicatorProperties.AnimationElementCount = 5;
-            transition1.LineWaitingIndicatorProperties.Caption = "";
-            transition1.LineWaitingIndicatorProperties.Description = "";
-            transition1.RingWaitingIndicatorProperties.AnimationElementCount = 5;
-            transition1.RingWaitingIndicatorProperties.Caption = "";
-            transition1.RingWaitingIndicatorProperties.Description = "";
-            transition1.ShowWaitingIndicator = DevExpress.Utils.DefaultBoolean.False;
-            transition1.TransitionType = fadeTransition1;
-            transition1.WaitingIndicatorProperties.Caption = "";
-            transition1.WaitingIndicatorProperties.Description = "";
-            this.transitionManager1.Transitions.Add(transition1);
+            transition7.Control = this.lb_permission;
+            transition7.LineWaitingIndicatorProperties.AnimationElementCount = 5;
+            transition7.LineWaitingIndicatorProperties.Caption = "";
+            transition7.LineWaitingIndicatorProperties.Description = "";
+            transition7.RingWaitingIndicatorProperties.AnimationElementCount = 5;
+            transition7.RingWaitingIndicatorProperties.Caption = "";
+            transition7.RingWaitingIndicatorProperties.Description = "";
+            transition7.ShowWaitingIndicator = DevExpress.Utils.DefaultBoolean.False;
+            transition7.TransitionType = fadeTransition7;
+            transition7.WaitingIndicatorProperties.Caption = "";
+            transition7.WaitingIndicatorProperties.Description = "";
+            this.transitionManager1.Transitions.Add(transition7);
             // 
             // lb_title
             // 
@@ -97,7 +107,7 @@
             this.lb_title.Font = new System.Drawing.Font("Myriad Pro", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_title.Location = new System.Drawing.Point(119, 27);
             this.lb_title.Name = "lb_title";
-            this.lb_title.Size = new System.Drawing.Size(532, 109);
+            this.lb_title.Size = new System.Drawing.Size(534, 115);
             this.lb_title.TabIndex = 3;
             this.lb_title.Text = "ElectroShop";
             this.lb_title.Paint += new System.Windows.Forms.PaintEventHandler(this.LabelPaint);
@@ -116,6 +126,7 @@
             this.tb_password.Text = "password";
             this.tb_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tb_password.WordWrap = false;
+            this.tb_password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ActionPasswordBox);
             // 
             // tb_email
             // 
@@ -127,7 +138,7 @@
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(306, 33);
             this.tb_email.TabIndex = 3;
-            this.tb_email.Text = "email";
+            this.tb_email.Text = "ID";
             this.tb_email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tb_email.WordWrap = false;
             // 
@@ -177,18 +188,78 @@
             // transitionManager2
             // 
             this.transitionManager2.FrameCount = 400;
-            transition2.Control = this.lb_join;
-            transition2.LineWaitingIndicatorProperties.AnimationElementCount = 5;
-            transition2.LineWaitingIndicatorProperties.Caption = "";
-            transition2.LineWaitingIndicatorProperties.Description = "";
-            transition2.RingWaitingIndicatorProperties.AnimationElementCount = 5;
-            transition2.RingWaitingIndicatorProperties.Caption = "";
-            transition2.RingWaitingIndicatorProperties.Description = "";
-            transition2.ShowWaitingIndicator = DevExpress.Utils.DefaultBoolean.False;
-            transition2.TransitionType = fadeTransition2;
-            transition2.WaitingIndicatorProperties.Caption = "";
-            transition2.WaitingIndicatorProperties.Description = "";
-            this.transitionManager2.Transitions.Add(transition2);
+            transition8.Control = this.lb_join;
+            transition8.LineWaitingIndicatorProperties.AnimationElementCount = 5;
+            transition8.LineWaitingIndicatorProperties.Caption = "";
+            transition8.LineWaitingIndicatorProperties.Description = "";
+            transition8.RingWaitingIndicatorProperties.AnimationElementCount = 5;
+            transition8.RingWaitingIndicatorProperties.Caption = "";
+            transition8.RingWaitingIndicatorProperties.Description = "";
+            transition8.ShowWaitingIndicator = DevExpress.Utils.DefaultBoolean.False;
+            transition8.TransitionType = fadeTransition8;
+            transition8.WaitingIndicatorProperties.Caption = "";
+            transition8.WaitingIndicatorProperties.Description = "";
+            this.transitionManager2.Transitions.Add(transition8);
+            // 
+            // dataSet11
+            // 
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.BLACKLISTTableAdapter = null;
+            this.tableAdapterManager1.BUYINGGOODSTableAdapter = null;
+            this.tableAdapterManager1.Connection = null;
+            this.tableAdapterManager1.CUSTOMERSTableAdapter = null;
+            this.tableAdapterManager1.DISCARDINGGOODSTableAdapter = null;
+            this.tableAdapterManager1.GOODSGRADETableAdapter = null;
+            this.tableAdapterManager1.GOODSSTORETableAdapter = null;
+            this.tableAdapterManager1.GOODSTableAdapter = null;
+            this.tableAdapterManager1.GOODSTYPETableAdapter = null;
+            this.tableAdapterManager1.GOODSUNITTableAdapter = null;
+            this.tableAdapterManager1.MANAGERTableAdapter = null;
+            this.tableAdapterManager1.OVERDUETableAdapter = null;
+            this.tableAdapterManager1.RENTSTATETableAdapter = null;
+            this.tableAdapterManager1.RENTTableAdapter = null;
+            this.tableAdapterManager1.RESERVATIONSTableAdapter = null;
+            this.tableAdapterManager1.REVIEWSTableAdapter = null;
+            this.tableAdapterManager1.SHELVESTableAdapter = null;
+            this.tableAdapterManager1.STAFFTableAdapter = null;
+            this.tableAdapterManager1.UpdateOrder = _5171580_김상원.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // oracleConnection1
+            // 
+            this.oracleConnection1.ConnectionString = "DATA SOURCE=MyORCL;PERSIST SECURITY INFO=True;USER ID=B5171580;password=B5171580";
+            // 
+            // customersTableAdapter1
+            // 
+            this.customersTableAdapter1.ClearBeforeFill = true;
+            // 
+            // managerTableAdapter1
+            // 
+            this.managerTableAdapter1.ClearBeforeFill = true;
+            // 
+            // staffTableAdapter1
+            // 
+            this.staffTableAdapter1.ClearBeforeFill = true;
+            // 
+            // transitionManager3
+            // 
+            this.transitionManager3.FrameCount = 400;
+            transition9.Control = this.tb_email;
+            transition9.LineWaitingIndicatorProperties.AnimationElementCount = 5;
+            transition9.LineWaitingIndicatorProperties.Caption = "";
+            transition9.LineWaitingIndicatorProperties.Description = "";
+            transition9.RingWaitingIndicatorProperties.AnimationElementCount = 5;
+            transition9.RingWaitingIndicatorProperties.Caption = "";
+            transition9.RingWaitingIndicatorProperties.Description = "";
+            transition9.ShowWaitingIndicator = DevExpress.Utils.DefaultBoolean.False;
+            transition9.TransitionType = fadeTransition9;
+            transition9.WaitingIndicatorProperties.Caption = "";
+            transition9.WaitingIndicatorProperties.Description = "";
+            this.transitionManager3.Transitions.Add(transition9);
             // 
             // Form1
             // 
@@ -211,6 +282,7 @@
             this.Text = "5171580_김상원";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FromClosing);
             ((System.ComponentModel.ISupportInitialize)(this.navigationBarMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,6 +300,13 @@
         private System.Windows.Forms.Label lb_login;
         private System.Windows.Forms.Label lb_join;
         private DevExpress.Utils.Animation.TransitionManager transitionManager2;
+        private DataSet1 dataSet11;
+        private DataSet1TableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Data.OracleClient.OracleConnection oracleConnection1;
+        private DataSet1TableAdapters.CUSTOMERSTableAdapter customersTableAdapter1;
+        private DataSet1TableAdapters.MANAGERTableAdapter managerTableAdapter1;
+        private DataSet1TableAdapters.STAFFTableAdapter staffTableAdapter1;
+        private DevExpress.Utils.Animation.TransitionManager transitionManager3;
     }
 }
 

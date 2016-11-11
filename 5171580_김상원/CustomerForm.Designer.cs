@@ -36,13 +36,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panelItems = new System.Windows.Forms.Panel();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.tileView1 = new DevExpress.XtraGrid.Views.Tile.TileView();
-            this.tileView2 = new DevExpress.XtraGrid.Views.Tile.TileView();
-            this.panelItems.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileView2)).BeginInit();
+            this.dataSet1 = new _5171580_김상원.DataSet1();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_title
@@ -52,7 +47,7 @@
             this.lb_title.Font = new System.Drawing.Font("Myriad Pro", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_title.Location = new System.Drawing.Point(26, 23);
             this.lb_title.Name = "lb_title";
-            this.lb_title.Size = new System.Drawing.Size(162, 33);
+            this.lb_title.Size = new System.Drawing.Size(162, 35);
             this.lb_title.TabIndex = 0;
             this.lb_title.Text = "ElectroShop";
             this.lb_title.Paint += new System.Windows.Forms.PaintEventHandler(this.LabelPaint);
@@ -144,40 +139,23 @@
             // panelItems
             // 
             this.panelItems.BackColor = System.Drawing.Color.Gray;
-            this.panelItems.Controls.Add(this.gridControl1);
             this.panelItems.Location = new System.Drawing.Point(120, 221);
             this.panelItems.Name = "panelItems";
-            this.panelItems.Size = new System.Drawing.Size(1064, 440);
+            this.panelItems.Size = new System.Drawing.Size(887, 440);
             this.panelItems.TabIndex = 2;
             // 
-            // gridControl1
+            // dataSet1
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
-            this.gridControl1.MainView = this.tileView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1064, 440);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.tileView1,
-            this.tileView2});
-            // 
-            // tileView1
-            // 
-            this.tileView1.GridControl = this.gridControl1;
-            this.tileView1.Name = "tileView1";
-            // 
-            // tileView2
-            // 
-            this.tileView2.GridControl = this.gridControl1;
-            this.tileView2.Name = "tileView2";
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.ClientSize = new System.Drawing.Size(1008, 661);
             this.Controls.Add(this.panelItems);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -188,10 +166,7 @@
             this.Controls.Add(this.lb_title);
             this.Name = "CustomerForm";
             this.Text = "CustomerForm";
-            this.panelItems.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,8 +182,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panelItems;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Tile.TileView tileView1;
-        private DevExpress.XtraGrid.Views.Tile.TileView tileView2;
+        private DataSet1 dataSet1;
     }
 }

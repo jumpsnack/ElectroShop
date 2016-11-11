@@ -14,14 +14,20 @@ using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
 using DevExpress.Utils.Animation;
 using DevExpress.XtraBars.Navigation;
+using Oracle.ManagedDataAccess.Client;
+using _5171580_김상원.DataSet1TableAdapters;
+using OracleConnection = System.Data.OracleClient.OracleConnection;
 
 namespace _5171580_김상원
 {
     public partial class Form1 : Form
     {
+        public static OracleConnection oracleConnection;
         public Form1()
         {
             InitializeComponent();
+            oracleConnection = oracleConnection1;
+            oracleConnection.Open();
 
             tb_email.Location = new Point(400 - tb_email.Width / 2, 270);
             tb_password.Location = new Point(400 - tb_password.Width / 2, 302);
@@ -131,6 +137,7 @@ namespace _5171580_김상원
                     case "Staff":
                         input.Text = "Manager";
                         break;
+
                     case "Manager":
                         input.Text = "Staff";
                         break;
@@ -157,14 +164,16 @@ namespace _5171580_김상원
         {
             NavigationBarItem input = e.Item;
 
-            if (transitionManager1.IsTransition && transitionManager2.IsTransition)
+            if (transitionManager1.IsTransition && transitionManager2.IsTransition && transitionManager3.IsTransition)
             {
                 transitionManager1.EndTransition();
                 transitionManager2.EndTransition();
+                transitionManager3.EndTransition();
             }
 
             transitionManager1.StartTransition(lb_permission);
             transitionManager2.StartTransition(lb_join);
+            transitionManager3.StartTransition(tb_email);
             try
             {
                 switch (input.Text)
@@ -172,18 +181,21 @@ namespace _5171580_김상원
                     case "Employee":
                         lb_permission.Text = "Manager";
                         lb_join.Text = "";
-                        lb_join.Enabled = false;
+                        lb_join.Enabled = false;tb_email.Text = "ID";
                         break;
                     case "Customer":
                         lb_permission.Text = "Customer";
                         lb_join.Text = "Join us >";
                         lb_join.Enabled = true;
+                        tb_email.Text = "email";
                         break;
                 }
-            }finally
+            }
+            finally
             {
                 transitionManager1.EndTransition();
                 transitionManager2.EndTransition();
+                transitionManager3.EndTransition();
             }
         }
 
@@ -196,16 +208,107 @@ namespace _5171580_김상원
         {
             switch (lb_permission.Text)
             {
-                case "Manager" :
-                    new ManagerForm().ShowDialog();
+                case "Manager":
+                    if (CheckManagerPassword())
+                    {
+                        this.Visible = false;
+                        new ManagerForm().ShowDialog();
+                        this.Close();
+                    }
                     break;
-                case "Staff" :
-                    new StaffForm().ShowDialog();
+
+                case "Staff":
+                    if (CheckStaffPassword())
+                    {
+                        this.Visible = false;
+                        new StaffForm().ShowDialog();
+                        this.Close();
+                    }
                     break;
-                case "Customer" :
-                    new CustomerForm().ShowDialog();
-                    break;
-            }
+
+                case "Customer":
+                    if (CheckCustomerPassword())
+                    {
+                        this.Visible = false;
+                        new CustomerForm().ShowDialog();
+                        this.Close();
+                    }
+                    break;}
         }
+
+        bool CheckCustomerPassword()
+        {
+            customersTableAdapter1.Fill(dataSet11.CUSTOMERS);
+            DataSet1.CUSTOMERSDataTable customerDataTable = (DataSet1.CUSTOMERSDataTable)dataSet11.Tables["CUSTOMERS"];
+            string email = tb_email.Text;
+            string password = tb_password.Text;
+
+            if (email.Length*password.Length < 1)
+            {
+                return false;
+            }
+
+            foreach (DataRow data in customerDataTable.Rows)
+            {
+                if (data["c_email"].ToString() == email)
+                {if (data["c_pwd"].ToString() == NewAccount.EncryptMD5(password + data["c_birth"].ToString()))
+                    {return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        bool CheckManagerPassword()
+        {
+            managerTableAdapter1.Fill(dataSet11.MANAGER);
+            DataSet1.MANAGERDataTable managerDataTable = dataSet11.MANAGER;
+
+            string id = tb_email.Text;
+            string password = tb_password.Text;
+            if (id.Length*password.Length < 1)
+            {
+                return false;
+            }
+
+           DataSet1.MANAGERRow row =  managerDataTable.FindByMNG_ID(id);
+            if (row != null)
+            {
+                if (row.MNG_PIN == password)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        bool CheckStaffPassword()
+        {
+            staffTableAdapter1.Fill(dataSet11.STAFF);
+            DataSet1.STAFFDataTable staffDataTable = dataSet11.STAFF;
+            string id = tb_email.Text;
+
+            string password = tb_password.Text;
+            if (id.Length*password.Length < 1)
+            {
+                return false;
+            }
+
+            DataSet1.STAFFRow row = staffDataTable.FindBySTF_ID(id);
+            if (row != null)
+            {
+                if (row.STF_PIN == password)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private void ActionPasswordBox(object sender, KeyPressEventArgs e)
+        {
+            ActionLabelLogin(null,null);
+        }
+
     }
 }
