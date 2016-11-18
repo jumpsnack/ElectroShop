@@ -13,14 +13,14 @@ namespace _5171580_김상원
 {
     public partial class DocMngMembers : DevExpress.XtraEditors.XtraUserControl
     {
-        private DataTable blacklistTable;
+        //  private DataSet1.BLACKLISTDataTable blacklistTable;
 
         public DocMngMembers()
         {
             InitializeComponent();
             oracleConnection1.Open();
             ReloadTables();
-            blacklistTable = bLACKLISTTableAdapter.GetData();
+            // blacklistTable = bLACKLISTTableAdapter.GetData();
         }
 
         private void ReloadTables()
@@ -52,29 +52,52 @@ namespace _5171580_김상원
 
         private void AddToBlack()
         {
+            DataSet1.BLACKLISTDataTable blacklistTable = bLACKLISTTableAdapter.GetData();
             DataRowView view = cUSTOMERSBindingSource.Current as DataRowView;
             DataRow data = view.Row;
             int c_id = int.Parse(data["c_id"].ToString());
-
-            DataRow newRow = blacklistTable.NewRow();
-            newRow["c_id"] = c_id;
-            newRow["blklist_date"] = getDateServerTime();
-            blacklistTable.Rows.Add(newRow);
-
-
-            if (bLACKLISTTableAdapter.Update(blacklistTable as DataSet1.BLACKLISTDataTable) > 0)
+            try
             {
-                MessageBox.Show("업데이트 성공");
+                DataRow newRow = blacklistTable.NewRow();
+                newRow["c_id"] = c_id;
+                newRow["blklist_date"] = getDateServerTime();
+                blacklistTable.Rows.Add(newRow);
+
+                if (bLACKLISTTableAdapter.Update(blacklistTable) > 0)
+                {
+                    MessageBox.Show("업데이트 성공");
+                    bLACKLISTTableAdapter.Fill(dataSet1.BLACKLIST); dataGridView2.ResetBindings();
+                }
+                else
+                {
+                    MessageBox.Show("업데이트 실패");
+                }
             }
-            else
+            catch (Exception e)
             {
-                MessageBox.Show("업데이트 실패");
+                MessageBox.Show(e.Message, "업데이트 실패");
             }
-            bLACKLISTTableAdapter.Fill(dataSet1.BLACKLIST);
+
+
         }
 
         private void removeFromBlack()
         {
+            try
+            {
+                bLACKLISTBindingSource.RemoveCurrent();
+                bLACKLISTBindingSource.EndEdit();
+
+                int ret = bLACKLISTTableAdapter.Update(dataSet1.BLACKLIST);
+                if (ret > 0)
+                {
+                    MessageBox.Show("Update successful");
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "Update failed");
+            }
         }
 
         Object getScalarData(string cmd)

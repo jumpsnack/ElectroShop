@@ -106,8 +106,15 @@
             // 
             // windowsUIView1
             // 
+            this.windowsUIView1.Appearance.BackColor = System.Drawing.Color.White;
+            this.windowsUIView1.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.windowsUIView1.Appearance.BorderColor = System.Drawing.Color.White;
+            this.windowsUIView1.Appearance.Options.UseBackColor = true;
+            this.windowsUIView1.Appearance.Options.UseBorderColor = true;
+            this.windowsUIView1.AppearanceCaption.BackColor = System.Drawing.Color.White;
             this.windowsUIView1.AppearanceCaption.Font = new System.Drawing.Font("Myriad Pro", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.windowsUIView1.AppearanceCaption.ForeColor = System.Drawing.Color.White;
+            this.windowsUIView1.AppearanceCaption.Options.UseBackColor = true;
             this.windowsUIView1.AppearanceCaption.Options.UseFont = true;
             this.windowsUIView1.AppearanceCaption.Options.UseForeColor = true;
             this.windowsUIView1.ContentContainers.AddRange(new DevExpress.XtraBars.Docking2010.Views.WindowsUI.IContentContainer[] {
@@ -117,6 +124,8 @@
             this.document2,
             this.document3,
             this.document4});
+            this.windowsUIView1.TileContainerProperties.AllowDrag = false;
+            this.windowsUIView1.TileContainerProperties.AllowDragTilesBetweenGroups = false;
             this.windowsUIView1.Tiles.AddRange(new DevExpress.XtraBars.Docking2010.Views.WindowsUI.BaseTile[] {
             this.document1Tile,
             this.document2Tile,
@@ -128,10 +137,12 @@
             // 
             // tabbedGroup1
             // 
-            this.tabbedGroup1.AppearanceSubtitle.BackColor = System.Drawing.Color.Yellow;
+            this.tabbedGroup1.AppearanceSubtitle.BackColor = System.Drawing.Color.White;
             this.tabbedGroup1.AppearanceSubtitle.Font = new System.Drawing.Font("Myriad Pro", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabbedGroup1.AppearanceSubtitle.ForeColor = System.Drawing.Color.White;
             this.tabbedGroup1.AppearanceSubtitle.Options.UseBackColor = true;
             this.tabbedGroup1.AppearanceSubtitle.Options.UseFont = true;
+            this.tabbedGroup1.AppearanceSubtitle.Options.UseForeColor = true;
             this.tabbedGroup1.Items.AddRange(new DevExpress.XtraBars.Docking2010.Views.WindowsUI.Document[] {
             this.document1,
             this.document2,
@@ -149,6 +160,8 @@
             this.document1.ControlName = "MngMembers";
             this.document1.Footer = "asdf";
             this.document1.Header = "";
+            this.document1.Properties.AllowActivate = DevExpress.Utils.DefaultBoolean.True;
+            this.document1.Properties.AllowDock = DevExpress.Utils.DefaultBoolean.True;
             // 
             // document2
             // 
@@ -167,11 +180,17 @@
             // 
             // document1Tile
             // 
+            this.document1Tile.Appearances.Normal.BackColor = System.Drawing.Color.White;
+            this.document1Tile.Appearances.Normal.Options.UseBackColor = true;
+            this.document1Tile.Checked = false;
             this.document1Tile.Document = this.document1;
+            this.document1Tile.Enabled = false;
             this.document1Tile.Name = "document1Tile";
             // 
             // document2Tile
             // 
+            this.document2Tile.Appearances.Normal.ForeColor = System.Drawing.Color.White;
+            this.document2Tile.Appearances.Normal.Options.UseForeColor = true;
             this.document2Tile.Document = this.document2;
             this.document2Tile.Name = "document2Tile";
             // 

@@ -58,6 +58,14 @@ namespace _5171580_김상원 {
         
         private STAFFDataTable tableSTAFF;
         
+        private GOODS_WITH_RENTDataTable tableGOODS_WITH_RENT;
+        
+        private REP_GOODSDataTable tableREP_GOODS;
+        
+        private REMAIN_GOODSDataTable tableREMAIN_GOODS;
+        
+        private MIN_RENT_FEEDataTable tableMIN_RENT_FEE;
+        
         private global::System.Data.DataRelation relationSYS_C0026187;
         
         private global::System.Data.DataRelation relationSYS_C0026207;
@@ -71,8 +79,6 @@ namespace _5171580_김상원 {
         private global::System.Data.DataRelation relationSYS_C0026203;
         
         private global::System.Data.DataRelation relationSYS_C0026170;
-        
-        private global::System.Data.DataRelation relationSYS_C0026171;
         
         private global::System.Data.DataRelation relationSYS_C0026172;
         
@@ -101,6 +107,8 @@ namespace _5171580_김상원 {
         private global::System.Data.DataRelation relationSYS_C0026192;
         
         private global::System.Data.DataRelation relationSYS_C0026193;
+        
+        private global::System.Data.DataRelation relationSYS_C0026171;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -180,6 +188,18 @@ namespace _5171580_김상원 {
                 }
                 if ((ds.Tables["STAFF"] != null)) {
                     base.Tables.Add(new STAFFDataTable(ds.Tables["STAFF"]));
+                }
+                if ((ds.Tables["GOODS_WITH_RENT"] != null)) {
+                    base.Tables.Add(new GOODS_WITH_RENTDataTable(ds.Tables["GOODS_WITH_RENT"]));
+                }
+                if ((ds.Tables["REP_GOODS"] != null)) {
+                    base.Tables.Add(new REP_GOODSDataTable(ds.Tables["REP_GOODS"]));
+                }
+                if ((ds.Tables["REMAIN_GOODS"] != null)) {
+                    base.Tables.Add(new REMAIN_GOODSDataTable(ds.Tables["REMAIN_GOODS"]));
+                }
+                if ((ds.Tables["MIN_RENT_FEE"] != null)) {
+                    base.Tables.Add(new MIN_RENT_FEEDataTable(ds.Tables["MIN_RENT_FEE"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -371,6 +391,46 @@ namespace _5171580_김상원 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public GOODS_WITH_RENTDataTable GOODS_WITH_RENT {
+            get {
+                return this.tableGOODS_WITH_RENT;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public REP_GOODSDataTable REP_GOODS {
+            get {
+                return this.tableREP_GOODS;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public REMAIN_GOODSDataTable REMAIN_GOODS {
+            get {
+                return this.tableREMAIN_GOODS;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public MIN_RENT_FEEDataTable MIN_RENT_FEE {
+            get {
+                return this.tableMIN_RENT_FEE;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -486,6 +546,18 @@ namespace _5171580_김상원 {
                 }
                 if ((ds.Tables["STAFF"] != null)) {
                     base.Tables.Add(new STAFFDataTable(ds.Tables["STAFF"]));
+                }
+                if ((ds.Tables["GOODS_WITH_RENT"] != null)) {
+                    base.Tables.Add(new GOODS_WITH_RENTDataTable(ds.Tables["GOODS_WITH_RENT"]));
+                }
+                if ((ds.Tables["REP_GOODS"] != null)) {
+                    base.Tables.Add(new REP_GOODSDataTable(ds.Tables["REP_GOODS"]));
+                }
+                if ((ds.Tables["REMAIN_GOODS"] != null)) {
+                    base.Tables.Add(new REMAIN_GOODSDataTable(ds.Tables["REMAIN_GOODS"]));
+                }
+                if ((ds.Tables["MIN_RENT_FEE"] != null)) {
+                    base.Tables.Add(new MIN_RENT_FEEDataTable(ds.Tables["MIN_RENT_FEE"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -622,6 +694,30 @@ namespace _5171580_김상원 {
                     this.tableSTAFF.InitVars();
                 }
             }
+            this.tableGOODS_WITH_RENT = ((GOODS_WITH_RENTDataTable)(base.Tables["GOODS_WITH_RENT"]));
+            if ((initTable == true)) {
+                if ((this.tableGOODS_WITH_RENT != null)) {
+                    this.tableGOODS_WITH_RENT.InitVars();
+                }
+            }
+            this.tableREP_GOODS = ((REP_GOODSDataTable)(base.Tables["REP_GOODS"]));
+            if ((initTable == true)) {
+                if ((this.tableREP_GOODS != null)) {
+                    this.tableREP_GOODS.InitVars();
+                }
+            }
+            this.tableREMAIN_GOODS = ((REMAIN_GOODSDataTable)(base.Tables["REMAIN_GOODS"]));
+            if ((initTable == true)) {
+                if ((this.tableREMAIN_GOODS != null)) {
+                    this.tableREMAIN_GOODS.InitVars();
+                }
+            }
+            this.tableMIN_RENT_FEE = ((MIN_RENT_FEEDataTable)(base.Tables["MIN_RENT_FEE"]));
+            if ((initTable == true)) {
+                if ((this.tableMIN_RENT_FEE != null)) {
+                    this.tableMIN_RENT_FEE.InitVars();
+                }
+            }
             this.relationSYS_C0026187 = this.Relations["SYS_C0026187"];
             this.relationSYS_C0026207 = this.Relations["SYS_C0026207"];
             this.relationSYS_C0026208 = this.Relations["SYS_C0026208"];
@@ -629,7 +725,6 @@ namespace _5171580_김상원 {
             this.relationSYS_C0026202 = this.Relations["SYS_C0026202"];
             this.relationSYS_C0026203 = this.Relations["SYS_C0026203"];
             this.relationSYS_C0026170 = this.Relations["SYS_C0026170"];
-            this.relationSYS_C0026171 = this.Relations["SYS_C0026171"];
             this.relationSYS_C0026172 = this.Relations["SYS_C0026172"];
             this.relationSYS_C0026173 = this.Relations["SYS_C0026173"];
             this.relationSYS_C0026197 = this.Relations["SYS_C0026197"];
@@ -644,6 +739,7 @@ namespace _5171580_김상원 {
             this.relationSYS_C0026191 = this.Relations["SYS_C0026191"];
             this.relationSYS_C0026192 = this.Relations["SYS_C0026192"];
             this.relationSYS_C0026193 = this.Relations["SYS_C0026193"];
+            this.relationSYS_C0026171 = this.Relations["SYS_C0026171"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -651,7 +747,7 @@ namespace _5171580_김상원 {
         private void InitClass() {
             this.DataSetName = "DataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DataSet1.xsd";
+            this.Namespace = "http://tempuri.org/DataSet11.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableBLACKLIST = new BLACKLISTDataTable();
@@ -688,6 +784,14 @@ namespace _5171580_김상원 {
             base.Tables.Add(this.tableSHELVES);
             this.tableSTAFF = new STAFFDataTable();
             base.Tables.Add(this.tableSTAFF);
+            this.tableGOODS_WITH_RENT = new GOODS_WITH_RENTDataTable();
+            base.Tables.Add(this.tableGOODS_WITH_RENT);
+            this.tableREP_GOODS = new REP_GOODSDataTable();
+            base.Tables.Add(this.tableREP_GOODS);
+            this.tableREMAIN_GOODS = new REMAIN_GOODSDataTable();
+            base.Tables.Add(this.tableREMAIN_GOODS);
+            this.tableMIN_RENT_FEE = new MIN_RENT_FEEDataTable();
+            base.Tables.Add(this.tableMIN_RENT_FEE);
             this.relationSYS_C0026187 = new global::System.Data.DataRelation("SYS_C0026187", new global::System.Data.DataColumn[] {
                         this.tableCUSTOMERS.C_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableBLACKLIST.C_IDColumn}, false);
@@ -716,10 +820,6 @@ namespace _5171580_김상원 {
                         this.tableSHELVES.SLVS_NOColumn}, new global::System.Data.DataColumn[] {
                         this.tableGOODS.SLVS_NOColumn}, false);
             this.Relations.Add(this.relationSYS_C0026170);
-            this.relationSYS_C0026171 = new global::System.Data.DataRelation("SYS_C0026171", new global::System.Data.DataColumn[] {
-                        this.tableGOODSTYPE.GDSTYPE_NOColumn}, new global::System.Data.DataColumn[] {
-                        this.tableGOODS.GDSTYPE_NOColumn}, false);
-            this.Relations.Add(this.relationSYS_C0026171);
             this.relationSYS_C0026172 = new global::System.Data.DataRelation("SYS_C0026172", new global::System.Data.DataColumn[] {
                         this.tableGOODSGRADE.GDSGRADE_NOColumn}, new global::System.Data.DataColumn[] {
                         this.tableGOODS.GDSGRADE_NOColumn}, false);
@@ -776,6 +876,10 @@ namespace _5171580_김상원 {
                         this.tableCUSTOMERS.C_IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableREVIEWS.C_IDColumn}, false);
             this.Relations.Add(this.relationSYS_C0026193);
+            this.relationSYS_C0026171 = new global::System.Data.DataRelation("SYS_C0026171", new global::System.Data.DataColumn[] {
+                        this.tableGOODSTYPE.GDSTYPE_NOColumn}, new global::System.Data.DataColumn[] {
+                        this.tableGOODS.GDSTYPE_NOColumn}, false);
+            this.Relations.Add(this.relationSYS_C0026171);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -877,6 +981,30 @@ namespace _5171580_김상원 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeSTAFF() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeGOODS_WITH_RENT() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeREP_GOODS() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeREMAIN_GOODS() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeMIN_RENT_FEE() {
             return false;
         }
         
@@ -985,6 +1113,18 @@ namespace _5171580_김상원 {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void STAFFRowChangeEventHandler(object sender, STAFFRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void GOODS_WITH_RENTRowChangeEventHandler(object sender, GOODS_WITH_RENTRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void REP_GOODSRowChangeEventHandler(object sender, REP_GOODSRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void REMAIN_GOODSRowChangeEventHandler(object sender, REMAIN_GOODSRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void MIN_RENT_FEERowChangeEventHandler(object sender, MIN_RENT_FEERowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -1133,6 +1273,7 @@ namespace _5171580_김상원 {
                 base.Columns.Add(this.columnBLKLIST_DATE);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnC_ID}, true));
+                this.columnC_ID.AutoIncrementSeed = 1;
                 this.columnC_ID.AllowDBNull = false;
                 this.columnC_ID.Unique = true;
             }
@@ -1388,10 +1529,10 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BUYINGGOODSRow AddBUYINGGOODSRow(decimal BUYING_NO, GOODSSTORERow parentGOODSSTORERowBySYS_C0026207, GOODSRow parentGOODSRowBySYS_C0026208, System.DateTime BUYING_DATE, MANAGERRow parentMANAGERRowBySYS_C0026209) {
+            public BUYINGGOODSRow AddBUYINGGOODSRow(GOODSSTORERow parentGOODSSTORERowBySYS_C0026207, GOODSRow parentGOODSRowBySYS_C0026208, System.DateTime BUYING_DATE, MANAGERRow parentMANAGERRowBySYS_C0026209) {
                 BUYINGGOODSRow rowBUYINGGOODSRow = ((BUYINGGOODSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        BUYING_NO,
+                        null,
                         null,
                         null,
                         BUYING_DATE,
@@ -1456,6 +1597,8 @@ namespace _5171580_김상원 {
                 base.Columns.Add(this.columnMNG_ID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnBUYING_NO}, true));
+                this.columnBUYING_NO.AutoIncrement = true;
+                this.columnBUYING_NO.AutoIncrementSeed = 1;
                 this.columnBUYING_NO.AllowDBNull = false;
                 this.columnBUYING_NO.Unique = true;
                 this.columnSTR_ID.AllowDBNull = false;
@@ -2044,10 +2187,10 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DISCARDINGGOODSRow AddDISCARDINGGOODSRow(decimal DISCARDING_NO, GOODSRow parentGOODSRowBySYS_C0026202, MANAGERRow parentMANAGERRowBySYS_C0026203) {
+            public DISCARDINGGOODSRow AddDISCARDINGGOODSRow(GOODSRow parentGOODSRowBySYS_C0026202, MANAGERRow parentMANAGERRowBySYS_C0026203) {
                 DISCARDINGGOODSRow rowDISCARDINGGOODSRow = ((DISCARDINGGOODSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        DISCARDING_NO,
+                        null,
                         null,
                         null};
                 if ((parentGOODSRowBySYS_C0026202 != null)) {
@@ -2101,6 +2244,8 @@ namespace _5171580_김상원 {
                 base.Columns.Add(this.columnMNG_ID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnDISCARDING_NO}, true));
+                this.columnDISCARDING_NO.AutoIncrement = true;
+                this.columnDISCARDING_NO.AutoIncrementSeed = 1;
                 this.columnDISCARDING_NO.AllowDBNull = false;
                 this.columnDISCARDING_NO.Unique = true;
                 this.columnGDS_ID.AllowDBNull = false;
@@ -2256,6 +2401,8 @@ namespace _5171580_김상원 {
             
             private global::System.Data.DataColumn columnGDS_PRICE;
             
+            private global::System.Data.DataColumn columnGDS_MODEL;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public GOODSDataTable() {
@@ -2363,6 +2510,14 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_MODELColumn {
+                get {
+                    return this.columnGDS_MODEL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2398,10 +2553,10 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public GOODSRow AddGOODSRow(decimal GDS_ID, byte[] GDS_IMG, string GDS_NAME, decimal GDS_QTY, SHELVESRow parentSHELVESRowBySYS_C0026170, GOODSTYPERow parentGOODSTYPERowBySYS_C0026171, GOODSGRADERow parentGOODSGRADERowBySYS_C0026172, GOODSUNITRow parentGOODSUNITRowBySYS_C0026173, decimal GDS_PRICE) {
+            public GOODSRow AddGOODSRow(byte[] GDS_IMG, string GDS_NAME, decimal GDS_QTY, SHELVESRow parentSHELVESRowBySYS_C0026170, GOODSTYPERow parentGOODSTYPERowBySYS_C0026171, GOODSGRADERow parentGOODSGRADERowBySYS_C0026172, GOODSUNITRow parentGOODSUNITRowBySYS_C0026173, decimal GDS_PRICE, string GDS_MODEL) {
                 GOODSRow rowGOODSRow = ((GOODSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        GDS_ID,
+                        null,
                         GDS_IMG,
                         GDS_NAME,
                         GDS_QTY,
@@ -2409,7 +2564,8 @@ namespace _5171580_김상원 {
                         null,
                         null,
                         null,
-                        GDS_PRICE};
+                        GDS_PRICE,
+                        GDS_MODEL};
                 if ((parentSHELVESRowBySYS_C0026170 != null)) {
                     columnValuesArray[4] = parentSHELVESRowBySYS_C0026170[0];
                 }
@@ -2460,6 +2616,7 @@ namespace _5171580_김상원 {
                 this.columnGDSGRADE_NO = base.Columns["GDSGRADE_NO"];
                 this.columnGDSUNIT_ID = base.Columns["GDSUNIT_ID"];
                 this.columnGDS_PRICE = base.Columns["GDS_PRICE"];
+                this.columnGDS_MODEL = base.Columns["GDS_MODEL"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2483,8 +2640,12 @@ namespace _5171580_김상원 {
                 base.Columns.Add(this.columnGDSUNIT_ID);
                 this.columnGDS_PRICE = new global::System.Data.DataColumn("GDS_PRICE", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGDS_PRICE);
+                this.columnGDS_MODEL = new global::System.Data.DataColumn("GDS_MODEL", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_MODEL);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnGDS_ID}, true));
+                this.columnGDS_ID.AutoIncrement = true;
+                this.columnGDS_ID.AutoIncrementSeed = 1;
                 this.columnGDS_ID.AllowDBNull = false;
                 this.columnGDS_ID.Unique = true;
                 this.columnGDS_NAME.MaxLength = 100;
@@ -2492,6 +2653,7 @@ namespace _5171580_김상원 {
                 this.columnGDSTYPE_NO.MaxLength = 2;
                 this.columnGDSGRADE_NO.MaxLength = 1;
                 this.columnGDSUNIT_ID.MaxLength = 2;
+                this.columnGDS_MODEL.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2745,7 +2907,7 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public GOODSGRADERow AddGOODSGRADERow(string GDSGRADE_NO, string GDSGRADE_DESC, string GDSGRADE_PERIOD, string GDSGRADE_PENALTY, decimal GDSGRADE_PRICERATE) {
+            public GOODSGRADERow AddGOODSGRADERow(string GDSGRADE_NO, string GDSGRADE_DESC, string GDSGRADE_PERIOD, decimal GDSGRADE_PENALTY, decimal GDSGRADE_PRICERATE) {
                 GOODSGRADERow rowGOODSGRADERow = ((GOODSGRADERow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         GDSGRADE_NO,
@@ -2798,7 +2960,7 @@ namespace _5171580_김상원 {
                 base.Columns.Add(this.columnGDSGRADE_DESC);
                 this.columnGDSGRADE_PERIOD = new global::System.Data.DataColumn("GDSGRADE_PERIOD", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGDSGRADE_PERIOD);
-                this.columnGDSGRADE_PENALTY = new global::System.Data.DataColumn("GDSGRADE_PENALTY", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnGDSGRADE_PENALTY = new global::System.Data.DataColumn("GDSGRADE_PENALTY", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGDSGRADE_PENALTY);
                 this.columnGDSGRADE_PRICERATE = new global::System.Data.DataColumn("GDSGRADE_PRICERATE", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGDSGRADE_PRICERATE);
@@ -2807,9 +2969,9 @@ namespace _5171580_김상원 {
                 this.columnGDSGRADE_NO.AllowDBNull = false;
                 this.columnGDSGRADE_NO.Unique = true;
                 this.columnGDSGRADE_NO.MaxLength = 1;
+                this.columnGDSGRADE_DESC.AllowDBNull = false;
                 this.columnGDSGRADE_DESC.MaxLength = 4;
                 this.columnGDSGRADE_PERIOD.MaxLength = 4;
-                this.columnGDSGRADE_PENALTY.MaxLength = 4;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3043,10 +3205,10 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public GOODSSTORERow AddGOODSSTORERow(decimal STR_ID, string STR_NAME, string STR_TEL) {
+            public GOODSSTORERow AddGOODSSTORERow(string STR_NAME, string STR_TEL) {
                 GOODSSTORERow rowGOODSSTORERow = ((GOODSSTORERow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        STR_ID,
+                        null,
                         STR_NAME,
                         STR_TEL};
                 rowGOODSSTORERow.ItemArray = columnValuesArray;
@@ -3094,8 +3256,11 @@ namespace _5171580_김상원 {
                 base.Columns.Add(this.columnSTR_TEL);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnSTR_ID}, true));
+                this.columnSTR_ID.AutoIncrement = true;
+                this.columnSTR_ID.AutoIncrementSeed = 1;
                 this.columnSTR_ID.AllowDBNull = false;
                 this.columnSTR_ID.Unique = true;
+                this.columnSTR_NAME.AllowDBNull = false;
                 this.columnSTR_NAME.MaxLength = 50;
                 this.columnSTR_TEL.MaxLength = 13;
             }
@@ -3371,6 +3536,7 @@ namespace _5171580_김상원 {
                 this.columnGDSTYPE_NO.AllowDBNull = false;
                 this.columnGDSTYPE_NO.Unique = true;
                 this.columnGDSTYPE_NO.MaxLength = 2;
+                this.columnGDSTYPE_DESC.AllowDBNull = false;
                 this.columnGDSTYPE_DESC.MaxLength = 10;
             }
             
@@ -3645,6 +3811,7 @@ namespace _5171580_김상원 {
                 this.columnGDSUNIT_ID.AllowDBNull = false;
                 this.columnGDSUNIT_ID.Unique = true;
                 this.columnGDSUNIT_ID.MaxLength = 2;
+                this.columnGDSUNIT_DESC.AllowDBNull = false;
                 this.columnGDSUNIT_DESC.MaxLength = 6;
             }
             
@@ -4257,6 +4424,7 @@ namespace _5171580_김상원 {
                 base.Columns.Add(this.columnOVERDUE_DATE);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnRNT_NO}, true));
+                this.columnRNT_NO.AutoIncrementSeed = 1;
                 this.columnRNT_NO.AllowDBNull = false;
                 this.columnRNT_NO.Unique = true;
                 this.columnGDS_ID.AllowDBNull = false;
@@ -4408,6 +4576,8 @@ namespace _5171580_김상원 {
             
             private global::System.Data.DataColumn columnRNTSTATE_NO;
             
+            private global::System.Data.DataColumn columnRNT_RETURNDATE;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public RENTDataTable() {
@@ -4499,6 +4669,14 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RNT_RETURNDATEColumn {
+                get {
+                    return this.columnRNT_RETURNDATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -4534,16 +4712,17 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public RENTRow AddRENTRow(decimal RNT_NO, GOODSRow parentGOODSRowBySYS_C0026178, CUSTOMERSRow parentCUSTOMERSRowBySYS_C0026179, System.DateTime RNT_DATE, decimal RNT_QTY, STAFFRow parentSTAFFRowBySYS_C0026180, RENTSTATERow parentRENTSTATERowBySYS_C0026181) {
+            public RENTRow AddRENTRow(GOODSRow parentGOODSRowBySYS_C0026178, CUSTOMERSRow parentCUSTOMERSRowBySYS_C0026179, System.DateTime RNT_DATE, decimal RNT_QTY, STAFFRow parentSTAFFRowBySYS_C0026180, RENTSTATERow parentRENTSTATERowBySYS_C0026181, System.DateTime RNT_RETURNDATE) {
                 RENTRow rowRENTRow = ((RENTRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        RNT_NO,
+                        null,
                         null,
                         null,
                         RNT_DATE,
                         RNT_QTY,
                         null,
-                        null};
+                        null,
+                        RNT_RETURNDATE};
                 if ((parentGOODSRowBySYS_C0026178 != null)) {
                     columnValuesArray[1] = parentGOODSRowBySYS_C0026178[0];
                 }
@@ -4592,6 +4771,7 @@ namespace _5171580_김상원 {
                 this.columnRNT_QTY = base.Columns["RNT_QTY"];
                 this.columnSTF_ID = base.Columns["STF_ID"];
                 this.columnRNTSTATE_NO = base.Columns["RNTSTATE_NO"];
+                this.columnRNT_RETURNDATE = base.Columns["RNT_RETURNDATE"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4611,8 +4791,12 @@ namespace _5171580_김상원 {
                 base.Columns.Add(this.columnSTF_ID);
                 this.columnRNTSTATE_NO = new global::System.Data.DataColumn("RNTSTATE_NO", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRNTSTATE_NO);
+                this.columnRNT_RETURNDATE = new global::System.Data.DataColumn("RNT_RETURNDATE", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRNT_RETURNDATE);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnRNT_NO}, true));
+                this.columnRNT_NO.AutoIncrement = true;
+                this.columnRNT_NO.AutoIncrementSeed = 1;
                 this.columnRNT_NO.AllowDBNull = false;
                 this.columnRNT_NO.Unique = true;
                 this.columnGDS_ID.AllowDBNull = false;
@@ -6246,6 +6430,1361 @@ namespace _5171580_김상원 {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class GOODS_WITH_RENTDataTable : global::System.Data.TypedTableBase<GOODS_WITH_RENTRow> {
+            
+            private global::System.Data.DataColumn columnGDS_ID;
+            
+            private global::System.Data.DataColumn columnGDS_IMG;
+            
+            private global::System.Data.DataColumn columnGDS_NAME;
+            
+            private global::System.Data.DataColumn columnGDS_QTY;
+            
+            private global::System.Data.DataColumn columnSLVS_NO;
+            
+            private global::System.Data.DataColumn columnGDSTYPE_NO;
+            
+            private global::System.Data.DataColumn columnGDSGRADE_NO;
+            
+            private global::System.Data.DataColumn columnGDSUNIT_ID;
+            
+            private global::System.Data.DataColumn columnRNT_NO;
+            
+            private global::System.Data.DataColumn columnC_ID;
+            
+            private global::System.Data.DataColumn columnRNT_DATE;
+            
+            private global::System.Data.DataColumn columnRNT_QTY;
+            
+            private global::System.Data.DataColumn columnSTF_ID;
+            
+            private global::System.Data.DataColumn columnRNTSTATE_NO;
+            
+            private global::System.Data.DataColumn columnRNT_RETURNDATE;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public GOODS_WITH_RENTDataTable() {
+                this.TableName = "GOODS_WITH_RENT";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal GOODS_WITH_RENTDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected GOODS_WITH_RENTDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_IDColumn {
+                get {
+                    return this.columnGDS_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_IMGColumn {
+                get {
+                    return this.columnGDS_IMG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_NAMEColumn {
+                get {
+                    return this.columnGDS_NAME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_QTYColumn {
+                get {
+                    return this.columnGDS_QTY;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SLVS_NOColumn {
+                get {
+                    return this.columnSLVS_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDSTYPE_NOColumn {
+                get {
+                    return this.columnGDSTYPE_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDSGRADE_NOColumn {
+                get {
+                    return this.columnGDSGRADE_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDSUNIT_IDColumn {
+                get {
+                    return this.columnGDSUNIT_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RNT_NOColumn {
+                get {
+                    return this.columnRNT_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn C_IDColumn {
+                get {
+                    return this.columnC_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RNT_DATEColumn {
+                get {
+                    return this.columnRNT_DATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RNT_QTYColumn {
+                get {
+                    return this.columnRNT_QTY;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn STF_IDColumn {
+                get {
+                    return this.columnSTF_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RNTSTATE_NOColumn {
+                get {
+                    return this.columnRNTSTATE_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RNT_RETURNDATEColumn {
+                get {
+                    return this.columnRNT_RETURNDATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public GOODS_WITH_RENTRow this[int index] {
+                get {
+                    return ((GOODS_WITH_RENTRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event GOODS_WITH_RENTRowChangeEventHandler GOODS_WITH_RENTRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event GOODS_WITH_RENTRowChangeEventHandler GOODS_WITH_RENTRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event GOODS_WITH_RENTRowChangeEventHandler GOODS_WITH_RENTRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event GOODS_WITH_RENTRowChangeEventHandler GOODS_WITH_RENTRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddGOODS_WITH_RENTRow(GOODS_WITH_RENTRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public GOODS_WITH_RENTRow AddGOODS_WITH_RENTRow(decimal GDS_ID, byte[] GDS_IMG, string GDS_NAME, decimal GDS_QTY, string SLVS_NO, string GDSTYPE_NO, string GDSGRADE_NO, string GDSUNIT_ID, decimal RNT_NO, decimal C_ID, System.DateTime RNT_DATE, decimal RNT_QTY, string STF_ID, string RNTSTATE_NO, System.DateTime RNT_RETURNDATE) {
+                GOODS_WITH_RENTRow rowGOODS_WITH_RENTRow = ((GOODS_WITH_RENTRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        GDS_ID,
+                        GDS_IMG,
+                        GDS_NAME,
+                        GDS_QTY,
+                        SLVS_NO,
+                        GDSTYPE_NO,
+                        GDSGRADE_NO,
+                        GDSUNIT_ID,
+                        RNT_NO,
+                        C_ID,
+                        RNT_DATE,
+                        RNT_QTY,
+                        STF_ID,
+                        RNTSTATE_NO,
+                        RNT_RETURNDATE};
+                rowGOODS_WITH_RENTRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowGOODS_WITH_RENTRow);
+                return rowGOODS_WITH_RENTRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                GOODS_WITH_RENTDataTable cln = ((GOODS_WITH_RENTDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new GOODS_WITH_RENTDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnGDS_ID = base.Columns["GDS_ID"];
+                this.columnGDS_IMG = base.Columns["GDS_IMG"];
+                this.columnGDS_NAME = base.Columns["GDS_NAME"];
+                this.columnGDS_QTY = base.Columns["GDS_QTY"];
+                this.columnSLVS_NO = base.Columns["SLVS_NO"];
+                this.columnGDSTYPE_NO = base.Columns["GDSTYPE_NO"];
+                this.columnGDSGRADE_NO = base.Columns["GDSGRADE_NO"];
+                this.columnGDSUNIT_ID = base.Columns["GDSUNIT_ID"];
+                this.columnRNT_NO = base.Columns["RNT_NO"];
+                this.columnC_ID = base.Columns["C_ID"];
+                this.columnRNT_DATE = base.Columns["RNT_DATE"];
+                this.columnRNT_QTY = base.Columns["RNT_QTY"];
+                this.columnSTF_ID = base.Columns["STF_ID"];
+                this.columnRNTSTATE_NO = base.Columns["RNTSTATE_NO"];
+                this.columnRNT_RETURNDATE = base.Columns["RNT_RETURNDATE"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnGDS_ID = new global::System.Data.DataColumn("GDS_ID", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_ID);
+                this.columnGDS_IMG = new global::System.Data.DataColumn("GDS_IMG", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_IMG);
+                this.columnGDS_NAME = new global::System.Data.DataColumn("GDS_NAME", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_NAME);
+                this.columnGDS_QTY = new global::System.Data.DataColumn("GDS_QTY", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_QTY);
+                this.columnSLVS_NO = new global::System.Data.DataColumn("SLVS_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSLVS_NO);
+                this.columnGDSTYPE_NO = new global::System.Data.DataColumn("GDSTYPE_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDSTYPE_NO);
+                this.columnGDSGRADE_NO = new global::System.Data.DataColumn("GDSGRADE_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDSGRADE_NO);
+                this.columnGDSUNIT_ID = new global::System.Data.DataColumn("GDSUNIT_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDSUNIT_ID);
+                this.columnRNT_NO = new global::System.Data.DataColumn("RNT_NO", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRNT_NO);
+                this.columnC_ID = new global::System.Data.DataColumn("C_ID", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnC_ID);
+                this.columnRNT_DATE = new global::System.Data.DataColumn("RNT_DATE", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRNT_DATE);
+                this.columnRNT_QTY = new global::System.Data.DataColumn("RNT_QTY", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRNT_QTY);
+                this.columnSTF_ID = new global::System.Data.DataColumn("STF_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSTF_ID);
+                this.columnRNTSTATE_NO = new global::System.Data.DataColumn("RNTSTATE_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRNTSTATE_NO);
+                this.columnRNT_RETURNDATE = new global::System.Data.DataColumn("RNT_RETURNDATE", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRNT_RETURNDATE);
+                this.columnGDS_ID.AllowDBNull = false;
+                this.columnGDS_NAME.MaxLength = 100;
+                this.columnSLVS_NO.MaxLength = 2;
+                this.columnGDSTYPE_NO.MaxLength = 2;
+                this.columnGDSGRADE_NO.MaxLength = 1;
+                this.columnGDSUNIT_ID.MaxLength = 2;
+                this.columnSTF_ID.MaxLength = 4;
+                this.columnRNTSTATE_NO.MaxLength = 1;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public GOODS_WITH_RENTRow NewGOODS_WITH_RENTRow() {
+                return ((GOODS_WITH_RENTRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new GOODS_WITH_RENTRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(GOODS_WITH_RENTRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.GOODS_WITH_RENTRowChanged != null)) {
+                    this.GOODS_WITH_RENTRowChanged(this, new GOODS_WITH_RENTRowChangeEvent(((GOODS_WITH_RENTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.GOODS_WITH_RENTRowChanging != null)) {
+                    this.GOODS_WITH_RENTRowChanging(this, new GOODS_WITH_RENTRowChangeEvent(((GOODS_WITH_RENTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.GOODS_WITH_RENTRowDeleted != null)) {
+                    this.GOODS_WITH_RENTRowDeleted(this, new GOODS_WITH_RENTRowChangeEvent(((GOODS_WITH_RENTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.GOODS_WITH_RENTRowDeleting != null)) {
+                    this.GOODS_WITH_RENTRowDeleting(this, new GOODS_WITH_RENTRowChangeEvent(((GOODS_WITH_RENTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveGOODS_WITH_RENTRow(GOODS_WITH_RENTRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "GOODS_WITH_RENTDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class REP_GOODSDataTable : global::System.Data.TypedTableBase<REP_GOODSRow> {
+            
+            private global::System.Data.DataColumn columnGDS_ID;
+            
+            private global::System.Data.DataColumn columnGDS_IMG;
+            
+            private global::System.Data.DataColumn columnGDS_NAME;
+            
+            private global::System.Data.DataColumn columnGDS_QTY;
+            
+            private global::System.Data.DataColumn columnSLVS_NO;
+            
+            private global::System.Data.DataColumn columnGDSTYPE_NO;
+            
+            private global::System.Data.DataColumn columnGDSGRADE_NO;
+            
+            private global::System.Data.DataColumn columnGDSUNIT_ID;
+            
+            private global::System.Data.DataColumn columnGDS_PRICE;
+            
+            private global::System.Data.DataColumn columnGDS_MODEL;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REP_GOODSDataTable() {
+                this.TableName = "REP_GOODS";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal REP_GOODSDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected REP_GOODSDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_IDColumn {
+                get {
+                    return this.columnGDS_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_IMGColumn {
+                get {
+                    return this.columnGDS_IMG;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_NAMEColumn {
+                get {
+                    return this.columnGDS_NAME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_QTYColumn {
+                get {
+                    return this.columnGDS_QTY;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SLVS_NOColumn {
+                get {
+                    return this.columnSLVS_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDSTYPE_NOColumn {
+                get {
+                    return this.columnGDSTYPE_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDSGRADE_NOColumn {
+                get {
+                    return this.columnGDSGRADE_NO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDSUNIT_IDColumn {
+                get {
+                    return this.columnGDSUNIT_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_PRICEColumn {
+                get {
+                    return this.columnGDS_PRICE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_MODELColumn {
+                get {
+                    return this.columnGDS_MODEL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REP_GOODSRow this[int index] {
+                get {
+                    return ((REP_GOODSRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event REP_GOODSRowChangeEventHandler REP_GOODSRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event REP_GOODSRowChangeEventHandler REP_GOODSRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event REP_GOODSRowChangeEventHandler REP_GOODSRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event REP_GOODSRowChangeEventHandler REP_GOODSRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddREP_GOODSRow(REP_GOODSRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REP_GOODSRow AddREP_GOODSRow(decimal GDS_ID, byte[] GDS_IMG, string GDS_NAME, decimal GDS_QTY, string SLVS_NO, string GDSTYPE_NO, string GDSGRADE_NO, string GDSUNIT_ID, decimal GDS_PRICE, string GDS_MODEL) {
+                REP_GOODSRow rowREP_GOODSRow = ((REP_GOODSRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        GDS_ID,
+                        GDS_IMG,
+                        GDS_NAME,
+                        GDS_QTY,
+                        SLVS_NO,
+                        GDSTYPE_NO,
+                        GDSGRADE_NO,
+                        GDSUNIT_ID,
+                        GDS_PRICE,
+                        GDS_MODEL};
+                rowREP_GOODSRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowREP_GOODSRow);
+                return rowREP_GOODSRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                REP_GOODSDataTable cln = ((REP_GOODSDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new REP_GOODSDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnGDS_ID = base.Columns["GDS_ID"];
+                this.columnGDS_IMG = base.Columns["GDS_IMG"];
+                this.columnGDS_NAME = base.Columns["GDS_NAME"];
+                this.columnGDS_QTY = base.Columns["GDS_QTY"];
+                this.columnSLVS_NO = base.Columns["SLVS_NO"];
+                this.columnGDSTYPE_NO = base.Columns["GDSTYPE_NO"];
+                this.columnGDSGRADE_NO = base.Columns["GDSGRADE_NO"];
+                this.columnGDSUNIT_ID = base.Columns["GDSUNIT_ID"];
+                this.columnGDS_PRICE = base.Columns["GDS_PRICE"];
+                this.columnGDS_MODEL = base.Columns["GDS_MODEL"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnGDS_ID = new global::System.Data.DataColumn("GDS_ID", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_ID);
+                this.columnGDS_IMG = new global::System.Data.DataColumn("GDS_IMG", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_IMG);
+                this.columnGDS_NAME = new global::System.Data.DataColumn("GDS_NAME", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_NAME);
+                this.columnGDS_QTY = new global::System.Data.DataColumn("GDS_QTY", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_QTY);
+                this.columnSLVS_NO = new global::System.Data.DataColumn("SLVS_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSLVS_NO);
+                this.columnGDSTYPE_NO = new global::System.Data.DataColumn("GDSTYPE_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDSTYPE_NO);
+                this.columnGDSGRADE_NO = new global::System.Data.DataColumn("GDSGRADE_NO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDSGRADE_NO);
+                this.columnGDSUNIT_ID = new global::System.Data.DataColumn("GDSUNIT_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDSUNIT_ID);
+                this.columnGDS_PRICE = new global::System.Data.DataColumn("GDS_PRICE", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_PRICE);
+                this.columnGDS_MODEL = new global::System.Data.DataColumn("GDS_MODEL", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_MODEL);
+                this.columnGDS_ID.AllowDBNull = false;
+                this.columnGDS_NAME.MaxLength = 100;
+                this.columnSLVS_NO.MaxLength = 2;
+                this.columnGDSTYPE_NO.MaxLength = 2;
+                this.columnGDSGRADE_NO.MaxLength = 1;
+                this.columnGDSUNIT_ID.MaxLength = 2;
+                this.columnGDS_MODEL.MaxLength = 20;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REP_GOODSRow NewREP_GOODSRow() {
+                return ((REP_GOODSRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new REP_GOODSRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(REP_GOODSRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.REP_GOODSRowChanged != null)) {
+                    this.REP_GOODSRowChanged(this, new REP_GOODSRowChangeEvent(((REP_GOODSRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.REP_GOODSRowChanging != null)) {
+                    this.REP_GOODSRowChanging(this, new REP_GOODSRowChangeEvent(((REP_GOODSRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.REP_GOODSRowDeleted != null)) {
+                    this.REP_GOODSRowDeleted(this, new REP_GOODSRowChangeEvent(((REP_GOODSRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.REP_GOODSRowDeleting != null)) {
+                    this.REP_GOODSRowDeleting(this, new REP_GOODSRowChangeEvent(((REP_GOODSRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveREP_GOODSRow(REP_GOODSRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "REP_GOODSDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class REMAIN_GOODSDataTable : global::System.Data.TypedTableBase<REMAIN_GOODSRow> {
+            
+            private global::System.Data.DataColumn columnGDS_NAME;
+            
+            private global::System.Data.DataColumn columnREMAINING;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REMAIN_GOODSDataTable() {
+                this.TableName = "REMAIN_GOODS";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal REMAIN_GOODSDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected REMAIN_GOODSDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_NAMEColumn {
+                get {
+                    return this.columnGDS_NAME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn REMAININGColumn {
+                get {
+                    return this.columnREMAINING;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REMAIN_GOODSRow this[int index] {
+                get {
+                    return ((REMAIN_GOODSRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event REMAIN_GOODSRowChangeEventHandler REMAIN_GOODSRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event REMAIN_GOODSRowChangeEventHandler REMAIN_GOODSRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event REMAIN_GOODSRowChangeEventHandler REMAIN_GOODSRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event REMAIN_GOODSRowChangeEventHandler REMAIN_GOODSRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddREMAIN_GOODSRow(REMAIN_GOODSRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REMAIN_GOODSRow AddREMAIN_GOODSRow(string GDS_NAME, decimal REMAINING) {
+                REMAIN_GOODSRow rowREMAIN_GOODSRow = ((REMAIN_GOODSRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        GDS_NAME,
+                        REMAINING};
+                rowREMAIN_GOODSRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowREMAIN_GOODSRow);
+                return rowREMAIN_GOODSRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                REMAIN_GOODSDataTable cln = ((REMAIN_GOODSDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new REMAIN_GOODSDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnGDS_NAME = base.Columns["GDS_NAME"];
+                this.columnREMAINING = base.Columns["REMAINING"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnGDS_NAME = new global::System.Data.DataColumn("GDS_NAME", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_NAME);
+                this.columnREMAINING = new global::System.Data.DataColumn("REMAINING", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnREMAINING);
+                this.columnGDS_NAME.MaxLength = 100;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REMAIN_GOODSRow NewREMAIN_GOODSRow() {
+                return ((REMAIN_GOODSRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new REMAIN_GOODSRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(REMAIN_GOODSRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.REMAIN_GOODSRowChanged != null)) {
+                    this.REMAIN_GOODSRowChanged(this, new REMAIN_GOODSRowChangeEvent(((REMAIN_GOODSRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.REMAIN_GOODSRowChanging != null)) {
+                    this.REMAIN_GOODSRowChanging(this, new REMAIN_GOODSRowChangeEvent(((REMAIN_GOODSRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.REMAIN_GOODSRowDeleted != null)) {
+                    this.REMAIN_GOODSRowDeleted(this, new REMAIN_GOODSRowChangeEvent(((REMAIN_GOODSRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.REMAIN_GOODSRowDeleting != null)) {
+                    this.REMAIN_GOODSRowDeleting(this, new REMAIN_GOODSRowChangeEvent(((REMAIN_GOODSRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveREMAIN_GOODSRow(REMAIN_GOODSRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "REMAIN_GOODSDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class MIN_RENT_FEEDataTable : global::System.Data.TypedTableBase<MIN_RENT_FEERow> {
+            
+            private global::System.Data.DataColumn columnGDS_NAME;
+            
+            private global::System.Data.DataColumn columnGDS_MIN_FEE;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public MIN_RENT_FEEDataTable() {
+                this.TableName = "MIN_RENT_FEE";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal MIN_RENT_FEEDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected MIN_RENT_FEEDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_NAMEColumn {
+                get {
+                    return this.columnGDS_NAME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GDS_MIN_FEEColumn {
+                get {
+                    return this.columnGDS_MIN_FEE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public MIN_RENT_FEERow this[int index] {
+                get {
+                    return ((MIN_RENT_FEERow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event MIN_RENT_FEERowChangeEventHandler MIN_RENT_FEERowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event MIN_RENT_FEERowChangeEventHandler MIN_RENT_FEERowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event MIN_RENT_FEERowChangeEventHandler MIN_RENT_FEERowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event MIN_RENT_FEERowChangeEventHandler MIN_RENT_FEERowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddMIN_RENT_FEERow(MIN_RENT_FEERow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public MIN_RENT_FEERow AddMIN_RENT_FEERow(string GDS_NAME, decimal GDS_MIN_FEE) {
+                MIN_RENT_FEERow rowMIN_RENT_FEERow = ((MIN_RENT_FEERow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        GDS_NAME,
+                        GDS_MIN_FEE};
+                rowMIN_RENT_FEERow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowMIN_RENT_FEERow);
+                return rowMIN_RENT_FEERow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                MIN_RENT_FEEDataTable cln = ((MIN_RENT_FEEDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new MIN_RENT_FEEDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnGDS_NAME = base.Columns["GDS_NAME"];
+                this.columnGDS_MIN_FEE = base.Columns["GDS_MIN_FEE"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnGDS_NAME = new global::System.Data.DataColumn("GDS_NAME", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_NAME);
+                this.columnGDS_MIN_FEE = new global::System.Data.DataColumn("GDS_MIN_FEE", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGDS_MIN_FEE);
+                this.columnGDS_NAME.MaxLength = 100;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public MIN_RENT_FEERow NewMIN_RENT_FEERow() {
+                return ((MIN_RENT_FEERow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new MIN_RENT_FEERow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(MIN_RENT_FEERow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.MIN_RENT_FEERowChanged != null)) {
+                    this.MIN_RENT_FEERowChanged(this, new MIN_RENT_FEERowChangeEvent(((MIN_RENT_FEERow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.MIN_RENT_FEERowChanging != null)) {
+                    this.MIN_RENT_FEERowChanging(this, new MIN_RENT_FEERowChangeEvent(((MIN_RENT_FEERow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.MIN_RENT_FEERowDeleted != null)) {
+                    this.MIN_RENT_FEERowDeleted(this, new MIN_RENT_FEERowChangeEvent(((MIN_RENT_FEERow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.MIN_RENT_FEERowDeleting != null)) {
+                    this.MIN_RENT_FEERowDeleting(this, new MIN_RENT_FEERowChangeEvent(((MIN_RENT_FEERow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveMIN_RENT_FEERow(MIN_RENT_FEERow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "MIN_RENT_FEEDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class BLACKLISTRow : global::System.Data.DataRow {
@@ -6938,23 +8477,28 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDS_MODEL {
+                get {
+                    try {
+                        return ((string)(this[this.tableGOODS.GDS_MODELColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS\' 테이블의 \'GDS_MODEL\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS.GDS_MODELColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SHELVESRow SHELVESRow {
                 get {
                     return ((SHELVESRow)(this.GetParentRow(this.Table.ParentRelations["SYS_C0026170"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["SYS_C0026170"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public GOODSTYPERow GOODSTYPERow {
-                get {
-                    return ((GOODSTYPERow)(this.GetParentRow(this.Table.ParentRelations["SYS_C0026171"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["SYS_C0026171"]);
                 }
             }
             
@@ -6977,6 +8521,17 @@ namespace _5171580_김상원 {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["SYS_C0026173"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public GOODSTYPERow GOODSTYPERow {
+                get {
+                    return ((GOODSTYPERow)(this.GetParentRow(this.Table.ParentRelations["SYS_C0026171"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["SYS_C0026171"]);
                 }
             }
             
@@ -7078,6 +8633,18 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_MODELNull() {
+                return this.IsNull(this.tableGOODS.GDS_MODELColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_MODELNull() {
+                this[this.tableGOODS.GDS_MODELColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public BUYINGGOODSRow[] GetBUYINGGOODSRows() {
                 if ((this.Table.ChildRelations["SYS_C0026208"] == null)) {
                     return new BUYINGGOODSRow[0];
@@ -7172,12 +8739,7 @@ namespace _5171580_김상원 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string GDSGRADE_DESC {
                 get {
-                    try {
-                        return ((string)(this[this.tableGOODSGRADE.GDSGRADE_DESCColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'GOODSGRADE\' 테이블의 \'GDSGRADE_DESC\' 열의 값이 DBNull입니다.", e);
-                    }
+                    return ((string)(this[this.tableGOODSGRADE.GDSGRADE_DESCColumn]));
                 }
                 set {
                     this[this.tableGOODSGRADE.GDSGRADE_DESCColumn] = value;
@@ -7202,10 +8764,10 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string GDSGRADE_PENALTY {
+            public decimal GDSGRADE_PENALTY {
                 get {
                     try {
-                        return ((string)(this[this.tableGOODSGRADE.GDSGRADE_PENALTYColumn]));
+                        return ((decimal)(this[this.tableGOODSGRADE.GDSGRADE_PENALTYColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("\'GOODSGRADE\' 테이블의 \'GDSGRADE_PENALTY\' 열의 값이 DBNull입니다.", e);
@@ -7230,18 +8792,6 @@ namespace _5171580_김상원 {
                 set {
                     this[this.tableGOODSGRADE.GDSGRADE_PRICERATEColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGDSGRADE_DESCNull() {
-                return this.IsNull(this.tableGOODSGRADE.GDSGRADE_DESCColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGDSGRADE_DESCNull() {
-                this[this.tableGOODSGRADE.GDSGRADE_DESCColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7321,12 +8871,7 @@ namespace _5171580_김상원 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string STR_NAME {
                 get {
-                    try {
-                        return ((string)(this[this.tableGOODSSTORE.STR_NAMEColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'GOODSSTORE\' 테이블의 \'STR_NAME\' 열의 값이 DBNull입니다.", e);
-                    }
+                    return ((string)(this[this.tableGOODSSTORE.STR_NAMEColumn]));
                 }
                 set {
                     this[this.tableGOODSSTORE.STR_NAMEColumn] = value;
@@ -7347,18 +8892,6 @@ namespace _5171580_김상원 {
                 set {
                     this[this.tableGOODSSTORE.STR_TELColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSTR_NAMENull() {
-                return this.IsNull(this.tableGOODSSTORE.STR_NAMEColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSTR_NAMENull() {
-                this[this.tableGOODSSTORE.STR_NAMEColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7414,28 +8947,11 @@ namespace _5171580_김상원 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string GDSTYPE_DESC {
                 get {
-                    try {
-                        return ((string)(this[this.tableGOODSTYPE.GDSTYPE_DESCColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'GOODSTYPE\' 테이블의 \'GDSTYPE_DESC\' 열의 값이 DBNull입니다.", e);
-                    }
+                    return ((string)(this[this.tableGOODSTYPE.GDSTYPE_DESCColumn]));
                 }
                 set {
                     this[this.tableGOODSTYPE.GDSTYPE_DESCColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGDSTYPE_DESCNull() {
-                return this.IsNull(this.tableGOODSTYPE.GDSTYPE_DESCColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGDSTYPE_DESCNull() {
-                this[this.tableGOODSTYPE.GDSTYPE_DESCColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7479,28 +8995,11 @@ namespace _5171580_김상원 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string GDSUNIT_DESC {
                 get {
-                    try {
-                        return ((string)(this[this.tableGOODSUNIT.GDSUNIT_DESCColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("\'GOODSUNIT\' 테이블의 \'GDSUNIT_DESC\' 열의 값이 DBNull입니다.", e);
-                    }
+                    return ((string)(this[this.tableGOODSUNIT.GDSUNIT_DESCColumn]));
                 }
                 set {
                     this[this.tableGOODSUNIT.GDSUNIT_DESCColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGDSUNIT_DESCNull() {
-                return this.IsNull(this.tableGOODSUNIT.GDSUNIT_DESCColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGDSUNIT_DESCNull() {
-                this[this.tableGOODSUNIT.GDSUNIT_DESCColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7869,6 +9368,22 @@ namespace _5171580_김상원 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime RNT_RETURNDATE {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableRENT.RNT_RETURNDATEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'RENT\' 테이블의 \'RNT_RETURNDATE\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableRENT.RNT_RETURNDATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public GOODSRow GOODSRow {
                 get {
                     return ((GOODSRow)(this.GetParentRow(this.Table.ParentRelations["SYS_C0026178"])));
@@ -7957,6 +9472,18 @@ namespace _5171580_김상원 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetRNTSTATE_NONull() {
                 this[this.tableRENT.RNTSTATE_NOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRNT_RETURNDATENull() {
+                return this.IsNull(this.tableRENT.RNT_RETURNDATEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRNT_RETURNDATENull() {
+                this[this.tableRENT.RNT_RETURNDATEColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8510,6 +10037,844 @@ namespace _5171580_김상원 {
                 else {
                     return ((RENTRow[])(base.GetChildRows(this.Table.ChildRelations["SYS_C0026180"])));
                 }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class GOODS_WITH_RENTRow : global::System.Data.DataRow {
+            
+            private GOODS_WITH_RENTDataTable tableGOODS_WITH_RENT;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal GOODS_WITH_RENTRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableGOODS_WITH_RENT = ((GOODS_WITH_RENTDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal GDS_ID {
+                get {
+                    return ((decimal)(this[this.tableGOODS_WITH_RENT.GDS_IDColumn]));
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.GDS_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public byte[] GDS_IMG {
+                get {
+                    try {
+                        return ((byte[])(this[this.tableGOODS_WITH_RENT.GDS_IMGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'GDS_IMG\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.GDS_IMGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDS_NAME {
+                get {
+                    try {
+                        return ((string)(this[this.tableGOODS_WITH_RENT.GDS_NAMEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'GDS_NAME\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.GDS_NAMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal GDS_QTY {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableGOODS_WITH_RENT.GDS_QTYColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'GDS_QTY\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.GDS_QTYColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string SLVS_NO {
+                get {
+                    try {
+                        return ((string)(this[this.tableGOODS_WITH_RENT.SLVS_NOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'SLVS_NO\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.SLVS_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDSTYPE_NO {
+                get {
+                    try {
+                        return ((string)(this[this.tableGOODS_WITH_RENT.GDSTYPE_NOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'GDSTYPE_NO\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.GDSTYPE_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDSGRADE_NO {
+                get {
+                    try {
+                        return ((string)(this[this.tableGOODS_WITH_RENT.GDSGRADE_NOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'GDSGRADE_NO\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.GDSGRADE_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDSUNIT_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableGOODS_WITH_RENT.GDSUNIT_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'GDSUNIT_ID\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.GDSUNIT_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal RNT_NO {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableGOODS_WITH_RENT.RNT_NOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'RNT_NO\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.RNT_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal C_ID {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableGOODS_WITH_RENT.C_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'C_ID\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.C_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime RNT_DATE {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableGOODS_WITH_RENT.RNT_DATEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'RNT_DATE\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.RNT_DATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal RNT_QTY {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableGOODS_WITH_RENT.RNT_QTYColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'RNT_QTY\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.RNT_QTYColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string STF_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableGOODS_WITH_RENT.STF_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'STF_ID\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.STF_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string RNTSTATE_NO {
+                get {
+                    try {
+                        return ((string)(this[this.tableGOODS_WITH_RENT.RNTSTATE_NOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'RNTSTATE_NO\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.RNTSTATE_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime RNT_RETURNDATE {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableGOODS_WITH_RENT.RNT_RETURNDATEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'GOODS_WITH_RENT\' 테이블의 \'RNT_RETURNDATE\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableGOODS_WITH_RENT.RNT_RETURNDATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_IMGNull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.GDS_IMGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_IMGNull() {
+                this[this.tableGOODS_WITH_RENT.GDS_IMGColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_NAMENull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.GDS_NAMEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_NAMENull() {
+                this[this.tableGOODS_WITH_RENT.GDS_NAMEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_QTYNull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.GDS_QTYColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_QTYNull() {
+                this[this.tableGOODS_WITH_RENT.GDS_QTYColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSLVS_NONull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.SLVS_NOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSLVS_NONull() {
+                this[this.tableGOODS_WITH_RENT.SLVS_NOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDSTYPE_NONull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.GDSTYPE_NOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDSTYPE_NONull() {
+                this[this.tableGOODS_WITH_RENT.GDSTYPE_NOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDSGRADE_NONull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.GDSGRADE_NOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDSGRADE_NONull() {
+                this[this.tableGOODS_WITH_RENT.GDSGRADE_NOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDSUNIT_IDNull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.GDSUNIT_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDSUNIT_IDNull() {
+                this[this.tableGOODS_WITH_RENT.GDSUNIT_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRNT_NONull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.RNT_NOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRNT_NONull() {
+                this[this.tableGOODS_WITH_RENT.RNT_NOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsC_IDNull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.C_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetC_IDNull() {
+                this[this.tableGOODS_WITH_RENT.C_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRNT_DATENull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.RNT_DATEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRNT_DATENull() {
+                this[this.tableGOODS_WITH_RENT.RNT_DATEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRNT_QTYNull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.RNT_QTYColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRNT_QTYNull() {
+                this[this.tableGOODS_WITH_RENT.RNT_QTYColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSTF_IDNull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.STF_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSTF_IDNull() {
+                this[this.tableGOODS_WITH_RENT.STF_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRNTSTATE_NONull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.RNTSTATE_NOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRNTSTATE_NONull() {
+                this[this.tableGOODS_WITH_RENT.RNTSTATE_NOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRNT_RETURNDATENull() {
+                return this.IsNull(this.tableGOODS_WITH_RENT.RNT_RETURNDATEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRNT_RETURNDATENull() {
+                this[this.tableGOODS_WITH_RENT.RNT_RETURNDATEColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class REP_GOODSRow : global::System.Data.DataRow {
+            
+            private REP_GOODSDataTable tableREP_GOODS;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal REP_GOODSRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableREP_GOODS = ((REP_GOODSDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal GDS_ID {
+                get {
+                    return ((decimal)(this[this.tableREP_GOODS.GDS_IDColumn]));
+                }
+                set {
+                    this[this.tableREP_GOODS.GDS_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public byte[] GDS_IMG {
+                get {
+                    try {
+                        return ((byte[])(this[this.tableREP_GOODS.GDS_IMGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'REP_GOODS\' 테이블의 \'GDS_IMG\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableREP_GOODS.GDS_IMGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDS_NAME {
+                get {
+                    try {
+                        return ((string)(this[this.tableREP_GOODS.GDS_NAMEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'REP_GOODS\' 테이블의 \'GDS_NAME\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableREP_GOODS.GDS_NAMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal GDS_QTY {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableREP_GOODS.GDS_QTYColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'REP_GOODS\' 테이블의 \'GDS_QTY\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableREP_GOODS.GDS_QTYColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string SLVS_NO {
+                get {
+                    try {
+                        return ((string)(this[this.tableREP_GOODS.SLVS_NOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'REP_GOODS\' 테이블의 \'SLVS_NO\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableREP_GOODS.SLVS_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDSTYPE_NO {
+                get {
+                    try {
+                        return ((string)(this[this.tableREP_GOODS.GDSTYPE_NOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'REP_GOODS\' 테이블의 \'GDSTYPE_NO\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableREP_GOODS.GDSTYPE_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDSGRADE_NO {
+                get {
+                    try {
+                        return ((string)(this[this.tableREP_GOODS.GDSGRADE_NOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'REP_GOODS\' 테이블의 \'GDSGRADE_NO\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableREP_GOODS.GDSGRADE_NOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDSUNIT_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableREP_GOODS.GDSUNIT_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'REP_GOODS\' 테이블의 \'GDSUNIT_ID\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableREP_GOODS.GDSUNIT_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal GDS_PRICE {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableREP_GOODS.GDS_PRICEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'REP_GOODS\' 테이블의 \'GDS_PRICE\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableREP_GOODS.GDS_PRICEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDS_MODEL {
+                get {
+                    try {
+                        return ((string)(this[this.tableREP_GOODS.GDS_MODELColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'REP_GOODS\' 테이블의 \'GDS_MODEL\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableREP_GOODS.GDS_MODELColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_IMGNull() {
+                return this.IsNull(this.tableREP_GOODS.GDS_IMGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_IMGNull() {
+                this[this.tableREP_GOODS.GDS_IMGColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_NAMENull() {
+                return this.IsNull(this.tableREP_GOODS.GDS_NAMEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_NAMENull() {
+                this[this.tableREP_GOODS.GDS_NAMEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_QTYNull() {
+                return this.IsNull(this.tableREP_GOODS.GDS_QTYColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_QTYNull() {
+                this[this.tableREP_GOODS.GDS_QTYColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSLVS_NONull() {
+                return this.IsNull(this.tableREP_GOODS.SLVS_NOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSLVS_NONull() {
+                this[this.tableREP_GOODS.SLVS_NOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDSTYPE_NONull() {
+                return this.IsNull(this.tableREP_GOODS.GDSTYPE_NOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDSTYPE_NONull() {
+                this[this.tableREP_GOODS.GDSTYPE_NOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDSGRADE_NONull() {
+                return this.IsNull(this.tableREP_GOODS.GDSGRADE_NOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDSGRADE_NONull() {
+                this[this.tableREP_GOODS.GDSGRADE_NOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDSUNIT_IDNull() {
+                return this.IsNull(this.tableREP_GOODS.GDSUNIT_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDSUNIT_IDNull() {
+                this[this.tableREP_GOODS.GDSUNIT_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_PRICENull() {
+                return this.IsNull(this.tableREP_GOODS.GDS_PRICEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_PRICENull() {
+                this[this.tableREP_GOODS.GDS_PRICEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_MODELNull() {
+                return this.IsNull(this.tableREP_GOODS.GDS_MODELColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_MODELNull() {
+                this[this.tableREP_GOODS.GDS_MODELColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class REMAIN_GOODSRow : global::System.Data.DataRow {
+            
+            private REMAIN_GOODSDataTable tableREMAIN_GOODS;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal REMAIN_GOODSRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableREMAIN_GOODS = ((REMAIN_GOODSDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDS_NAME {
+                get {
+                    try {
+                        return ((string)(this[this.tableREMAIN_GOODS.GDS_NAMEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'REMAIN_GOODS\' 테이블의 \'GDS_NAME\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableREMAIN_GOODS.GDS_NAMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal REMAINING {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableREMAIN_GOODS.REMAININGColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'REMAIN_GOODS\' 테이블의 \'REMAINING\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableREMAIN_GOODS.REMAININGColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_NAMENull() {
+                return this.IsNull(this.tableREMAIN_GOODS.GDS_NAMEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_NAMENull() {
+                this[this.tableREMAIN_GOODS.GDS_NAMEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsREMAININGNull() {
+                return this.IsNull(this.tableREMAIN_GOODS.REMAININGColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetREMAININGNull() {
+                this[this.tableREMAIN_GOODS.REMAININGColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class MIN_RENT_FEERow : global::System.Data.DataRow {
+            
+            private MIN_RENT_FEEDataTable tableMIN_RENT_FEE;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal MIN_RENT_FEERow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableMIN_RENT_FEE = ((MIN_RENT_FEEDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string GDS_NAME {
+                get {
+                    try {
+                        return ((string)(this[this.tableMIN_RENT_FEE.GDS_NAMEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'MIN_RENT_FEE\' 테이블의 \'GDS_NAME\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableMIN_RENT_FEE.GDS_NAMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal GDS_MIN_FEE {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableMIN_RENT_FEE.GDS_MIN_FEEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'MIN_RENT_FEE\' 테이블의 \'GDS_MIN_FEE\' 열의 값이 DBNull입니다.", e);
+                    }
+                }
+                set {
+                    this[this.tableMIN_RENT_FEE.GDS_MIN_FEEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_NAMENull() {
+                return this.IsNull(this.tableMIN_RENT_FEE.GDS_NAMEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_NAMENull() {
+                this[this.tableMIN_RENT_FEE.GDS_NAMEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGDS_MIN_FEENull() {
+                return this.IsNull(this.tableMIN_RENT_FEE.GDS_MIN_FEEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGDS_MIN_FEENull() {
+                this[this.tableMIN_RENT_FEE.GDS_MIN_FEEColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -9077,6 +11442,142 @@ namespace _5171580_김상원 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public STAFFRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class GOODS_WITH_RENTRowChangeEvent : global::System.EventArgs {
+            
+            private GOODS_WITH_RENTRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public GOODS_WITH_RENTRowChangeEvent(GOODS_WITH_RENTRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public GOODS_WITH_RENTRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class REP_GOODSRowChangeEvent : global::System.EventArgs {
+            
+            private REP_GOODSRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REP_GOODSRowChangeEvent(REP_GOODSRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REP_GOODSRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class REMAIN_GOODSRowChangeEvent : global::System.EventArgs {
+            
+            private REMAIN_GOODSRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REMAIN_GOODSRowChangeEvent(REMAIN_GOODSRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public REMAIN_GOODSRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class MIN_RENT_FEERowChangeEvent : global::System.EventArgs {
+            
+            private MIN_RENT_FEERow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public MIN_RENT_FEERowChangeEvent(MIN_RENT_FEERow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public MIN_RENT_FEERow Row {
                 get {
                     return this.eventRow;
                 }
@@ -10547,12 +13048,36 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[1];
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[3];
             this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT C_ID, C_TEL, C_ADDR, C_BIRTH, C_EMAIL, C_PWD, C_NAME FROM B5171580.CUSTOME" +
                 "RS";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT C_ID, C_TEL, C_ADDR, C_BIRTH, C_EMAIL, C_PWD, C_NAME\r\nFROM B5171580.CUSTOM" +
+                "ERS\r\nWHERE C_EMAIL = :aa";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 255;
+            param.IsNullable = true;
+            param.SourceColumn = "C_EMAIL";
+            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT C_ID, C_TEL, C_ADDR, C_BIRTH, C_EMAIL, C_PWD, C_NAME\r\nFROM B5171580.CUSTOM" +
+                "ERS\r\nWHERE c_name = :aa";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 20;
+            param.IsNullable = true;
+            param.SourceColumn = "C_NAME";
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10574,6 +13099,40 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSet1.CUSTOMERSDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.CUSTOMERSDataTable dataTable = new DataSet1.CUSTOMERSDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.CUSTOMERSDataTable GetDataByEmail(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((aa == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
+            DataSet1.CUSTOMERSDataTable dataTable = new DataSet1.CUSTOMERSDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.CUSTOMERSDataTable GetRowsByName(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((aa == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
             DataSet1.CUSTOMERSDataTable dataTable = new DataSet1.CUSTOMERSDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -11420,10 +13979,11 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("GDSGRADE_NO", "GDSGRADE_NO");
             tableMapping.ColumnMappings.Add("GDSUNIT_ID", "GDSUNIT_ID");
             tableMapping.ColumnMappings.Add("GDS_PRICE", "GDS_PRICE");
+            tableMapping.ColumnMappings.Add("GDS_MODEL", "GDS_MODEL");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""B5171580"".""GOODS"" WHERE ((""GDS_ID"" = :Original_GDS_ID) AND ((:IsNull_GDS_NAME = 1 AND ""GDS_NAME"" IS NULL) OR (""GDS_NAME"" = :Original_GDS_NAME)) AND ((:IsNull_GDS_QTY = 1 AND ""GDS_QTY"" IS NULL) OR (""GDS_QTY"" = :Original_GDS_QTY)) AND ((:IsNull_SLVS_NO = 1 AND ""SLVS_NO"" IS NULL) OR (""SLVS_NO"" = :Original_SLVS_NO)) AND ((:IsNull_GDSTYPE_NO = 1 AND ""GDSTYPE_NO"" IS NULL) OR (""GDSTYPE_NO"" = :Original_GDSTYPE_NO)) AND ((:IsNull_GDSGRADE_NO = 1 AND ""GDSGRADE_NO"" IS NULL) OR (""GDSGRADE_NO"" = :Original_GDSGRADE_NO)) AND ((:IsNull_GDSUNIT_ID = 1 AND ""GDSUNIT_ID"" IS NULL) OR (""GDSUNIT_ID"" = :Original_GDSUNIT_ID)) AND ((:IsNull_GDS_PRICE = 1 AND ""GDS_PRICE"" IS NULL) OR (""GDS_PRICE"" = :Original_GDS_PRICE)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""B5171580"".""GOODS"" WHERE ((""GDS_ID"" = :Original_GDS_ID) AND ((:IsNull_GDS_NAME = 1 AND ""GDS_NAME"" IS NULL) OR (""GDS_NAME"" = :Original_GDS_NAME)) AND ((:IsNull_GDS_QTY = 1 AND ""GDS_QTY"" IS NULL) OR (""GDS_QTY"" = :Original_GDS_QTY)) AND ((:IsNull_SLVS_NO = 1 AND ""SLVS_NO"" IS NULL) OR (""SLVS_NO"" = :Original_SLVS_NO)) AND ((:IsNull_GDSTYPE_NO = 1 AND ""GDSTYPE_NO"" IS NULL) OR (""GDSTYPE_NO"" = :Original_GDSTYPE_NO)) AND ((:IsNull_GDSGRADE_NO = 1 AND ""GDSGRADE_NO"" IS NULL) OR (""GDSGRADE_NO"" = :Original_GDSGRADE_NO)) AND ((:IsNull_GDSUNIT_ID = 1 AND ""GDSUNIT_ID"" IS NULL) OR (""GDSUNIT_ID"" = :Original_GDSUNIT_ID)) AND ((:IsNull_GDS_PRICE = 1 AND ""GDS_PRICE"" IS NULL) OR (""GDS_PRICE"" = :Original_GDS_PRICE)) AND ((:IsNull_GDS_MODEL = 1 AND ""GDS_MODEL"" IS NULL) OR (""GDS_MODEL"" = :Original_GDS_MODEL)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDS_ID";
@@ -11563,12 +14123,27 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.SourceColumn = "GDS_PRICE";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "IsNull_GDS_MODEL";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
+            param.Size = 20;
+            param.IsNullable = true;
+            param.SourceColumn = "GDS_MODEL";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "Original_GDS_MODEL";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 20;
+            param.IsNullable = true;
+            param.SourceColumn = "GDS_MODEL";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
             this._adapter.InsertCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO \"B5171580\".\"GOODS\" (\"GDS_ID\", \"GDS_IMG\", \"GDS_NAME\", \"GDS_QTY\", \"SLVS" +
-                "_NO\", \"GDSTYPE_NO\", \"GDSGRADE_NO\", \"GDSUNIT_ID\", \"GDS_PRICE\") VALUES (:GDS_ID, :" +
-                "GDS_IMG, :GDS_NAME, :GDS_QTY, :SLVS_NO, :GDSTYPE_NO, :GDSGRADE_NO, :GDSUNIT_ID, " +
-                ":GDS_PRICE)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO ""B5171580"".""GOODS"" (""GDS_ID"", ""GDS_IMG"", ""GDS_NAME"", ""GDS_QTY"", ""SLVS_NO"", ""GDSTYPE_NO"", ""GDSGRADE_NO"", ""GDSUNIT_ID"", ""GDS_PRICE"", ""GDS_MODEL"") VALUES (:GDS_ID, :GDS_IMG, :GDS_NAME, :GDS_QTY, :SLVS_NO, :GDSTYPE_NO, :GDSGRADE_NO, :GDSUNIT_ID, :GDS_PRICE, :GDS_MODEL)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "GDS_ID";
@@ -11638,9 +14213,16 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "GDS_PRICE";
             this._adapter.InsertCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "GDS_MODEL";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 20;
+            param.IsNullable = true;
+            param.SourceColumn = "GDS_MODEL";
+            this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE ""B5171580"".""GOODS"" SET ""GDS_ID"" = :GDS_ID, ""GDS_IMG"" = :GDS_IMG, ""GDS_NAME"" = :GDS_NAME, ""GDS_QTY"" = :GDS_QTY, ""SLVS_NO"" = :SLVS_NO, ""GDSTYPE_NO"" = :GDSTYPE_NO, ""GDSGRADE_NO"" = :GDSGRADE_NO, ""GDSUNIT_ID"" = :GDSUNIT_ID, ""GDS_PRICE"" = :GDS_PRICE WHERE ((""GDS_ID"" = :Original_GDS_ID) AND ((:IsNull_GDS_NAME = 1 AND ""GDS_NAME"" IS NULL) OR (""GDS_NAME"" = :Original_GDS_NAME)) AND ((:IsNull_GDS_QTY = 1 AND ""GDS_QTY"" IS NULL) OR (""GDS_QTY"" = :Original_GDS_QTY)) AND ((:IsNull_SLVS_NO = 1 AND ""SLVS_NO"" IS NULL) OR (""SLVS_NO"" = :Original_SLVS_NO)) AND ((:IsNull_GDSTYPE_NO = 1 AND ""GDSTYPE_NO"" IS NULL) OR (""GDSTYPE_NO"" = :Original_GDSTYPE_NO)) AND ((:IsNull_GDSGRADE_NO = 1 AND ""GDSGRADE_NO"" IS NULL) OR (""GDSGRADE_NO"" = :Original_GDSGRADE_NO)) AND ((:IsNull_GDSUNIT_ID = 1 AND ""GDSUNIT_ID"" IS NULL) OR (""GDSUNIT_ID"" = :Original_GDSUNIT_ID)) AND ((:IsNull_GDS_PRICE = 1 AND ""GDS_PRICE"" IS NULL) OR (""GDS_PRICE"" = :Original_GDS_PRICE)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE ""B5171580"".""GOODS"" SET ""GDS_ID"" = :GDS_ID, ""GDS_IMG"" = :GDS_IMG, ""GDS_NAME"" = :GDS_NAME, ""GDS_QTY"" = :GDS_QTY, ""SLVS_NO"" = :SLVS_NO, ""GDSTYPE_NO"" = :GDSTYPE_NO, ""GDSGRADE_NO"" = :GDSGRADE_NO, ""GDSUNIT_ID"" = :GDSUNIT_ID, ""GDS_PRICE"" = :GDS_PRICE, ""GDS_MODEL"" = :GDS_MODEL WHERE ((""GDS_ID"" = :Original_GDS_ID) AND ((:IsNull_GDS_NAME = 1 AND ""GDS_NAME"" IS NULL) OR (""GDS_NAME"" = :Original_GDS_NAME)) AND ((:IsNull_GDS_QTY = 1 AND ""GDS_QTY"" IS NULL) OR (""GDS_QTY"" = :Original_GDS_QTY)) AND ((:IsNull_SLVS_NO = 1 AND ""SLVS_NO"" IS NULL) OR (""SLVS_NO"" = :Original_SLVS_NO)) AND ((:IsNull_GDSTYPE_NO = 1 AND ""GDSTYPE_NO"" IS NULL) OR (""GDSTYPE_NO"" = :Original_GDSTYPE_NO)) AND ((:IsNull_GDSGRADE_NO = 1 AND ""GDSGRADE_NO"" IS NULL) OR (""GDSGRADE_NO"" = :Original_GDSGRADE_NO)) AND ((:IsNull_GDSUNIT_ID = 1 AND ""GDSUNIT_ID"" IS NULL) OR (""GDSUNIT_ID"" = :Original_GDSUNIT_ID)) AND ((:IsNull_GDS_PRICE = 1 AND ""GDS_PRICE"" IS NULL) OR (""GDS_PRICE"" = :Original_GDS_PRICE)) AND ((:IsNull_GDS_MODEL = 1 AND ""GDS_MODEL"" IS NULL) OR (""GDS_MODEL"" = :Original_GDS_MODEL)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "GDS_ID";
@@ -11709,6 +14291,13 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.Size = 22;
             param.IsNullable = true;
             param.SourceColumn = "GDS_PRICE";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "GDS_MODEL";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 20;
+            param.IsNullable = true;
+            param.SourceColumn = "GDS_MODEL";
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDS_ID";
@@ -11848,6 +14437,24 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.SourceColumn = "GDS_PRICE";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "IsNull_GDS_MODEL";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
+            param.Size = 20;
+            param.IsNullable = true;
+            param.SourceColumn = "GDS_MODEL";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "Original_GDS_MODEL";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 20;
+            param.IsNullable = true;
+            param.SourceColumn = "GDS_MODEL";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11860,12 +14467,61 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[1];
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[5];
             this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT GDS_ID, GDS_IMG, GDS_NAME, GDS_QTY, SLVS_NO, GDSTYPE_NO, GDSGRADE_NO, GDSU" +
-                "NIT_ID, GDS_PRICE FROM B5171580.GOODS";
+                "NIT_ID, GDS_PRICE, GDS_MODEL FROM B5171580.GOODS";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT GDS_ID, GDS_IMG, GDS_NAME, GDS_QTY, SLVS_NO, GDSTYPE_NO, GDSGRADE_NO, GDSU" +
+                "NIT_ID, GDS_PRICE, GDS_MODEL\r\nFROM B5171580.GOODS\r\nWHERE gds_id = :aa";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Decimal;
+            param.Size = 22;
+            param.IsNullable = true;
+            param.SourceColumn = "GDS_ID";
+            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT  GDS_ID, GDS_IMG, GDS_NAME, GDS_QTY, SLVS_NO, GDSTYPE_NO, GDSGRADE_NO, GDS" +
+                "UNIT_ID, GDS_PRICE, GDS_MODEL\r\nFROM     B5171580.GOODS\r\nWHERE  (GDS_NAME = :aa)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "GDS_NAME";
+            this._commandCollection[2].Parameters.Add(param);
+            this._commandCollection[3] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "SELECT GDS_ID, GDS_IMG, GDS_NAME, GDS_QTY, SLVS_NO, GDSTYPE_NO, GDSGRADE_NO, GDSU" +
+                "NIT_ID, GDS_PRICE, GDS_MODEL\r\nFROM B5171580.GOODS\r\nWHERE slvs_no = :aa";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 2;
+            param.IsNullable = true;
+            param.SourceColumn = "SLVS_NO";
+            this._commandCollection[3].Parameters.Add(param);
+            this._commandCollection[4] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "SELECT GDS_ID, GDS_IMG, GDS_NAME, GDS_QTY, SLVS_NO, GDSTYPE_NO, GDSGRADE_NO, GDSU" +
+                "NIT_ID, GDS_PRICE, GDS_MODEL\r\nFROM B5171580.GOODS\r\nWHERE gdstype_no = :aa";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 2;
+            param.IsNullable = true;
+            param.SourceColumn = "GDSTYPE_NO";
+            this._commandCollection[4].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11887,6 +14543,69 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSet1.GOODSDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.GOODSDataTable dataTable = new DataSet1.GOODSDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSDataTable GetDataById(decimal aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((decimal)(aa));
+            DataSet1.GOODSDataTable dataTable = new DataSet1.GOODSDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSDataTable GetDataByName(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((aa == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
+            DataSet1.GOODSDataTable dataTable = new DataSet1.GOODSDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSDataTable GetDataBySlvs(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((aa == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
+            DataSet1.GOODSDataTable dataTable = new DataSet1.GOODSDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSDataTable GetDataByType(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[4];
+            if ((aa == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
             DataSet1.GOODSDataTable dataTable = new DataSet1.GOODSDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -11925,7 +14644,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(decimal Original_GDS_ID, string Original_GDS_NAME, global::System.Nullable<decimal> Original_GDS_QTY, string Original_SLVS_NO, string Original_GDSTYPE_NO, string Original_GDSGRADE_NO, string Original_GDSUNIT_ID, global::System.Nullable<decimal> Original_GDS_PRICE) {
+        public virtual int Delete(decimal Original_GDS_ID, string Original_GDS_NAME, global::System.Nullable<decimal> Original_GDS_QTY, string Original_SLVS_NO, string Original_GDSTYPE_NO, string Original_GDSGRADE_NO, string Original_GDSUNIT_ID, global::System.Nullable<decimal> Original_GDS_PRICE, string Original_GDS_MODEL) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((decimal)(Original_GDS_ID));
             if ((Original_GDS_NAME == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -11983,6 +14702,14 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
+            if ((Original_GDS_MODEL == null)) {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_GDS_MODEL));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -12003,7 +14730,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(decimal GDS_ID, object GDS_IMG, string GDS_NAME, global::System.Nullable<decimal> GDS_QTY, string SLVS_NO, string GDSTYPE_NO, string GDSGRADE_NO, string GDSUNIT_ID, global::System.Nullable<decimal> GDS_PRICE) {
+        public virtual int Insert(decimal GDS_ID, object GDS_IMG, string GDS_NAME, global::System.Nullable<decimal> GDS_QTY, string SLVS_NO, string GDSTYPE_NO, string GDSGRADE_NO, string GDSUNIT_ID, global::System.Nullable<decimal> GDS_PRICE, string GDS_MODEL) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((decimal)(GDS_ID));
             if ((GDS_IMG == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -12053,6 +14780,12 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
+            if ((GDS_MODEL == null)) {
+                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(GDS_MODEL));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -12083,6 +14816,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     string GDSGRADE_NO, 
                     string GDSUNIT_ID, 
                     global::System.Nullable<decimal> GDS_PRICE, 
+                    string GDS_MODEL, 
                     decimal Original_GDS_ID, 
                     string Original_GDS_NAME, 
                     global::System.Nullable<decimal> Original_GDS_QTY, 
@@ -12090,7 +14824,8 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     string Original_GDSTYPE_NO, 
                     string Original_GDSGRADE_NO, 
                     string Original_GDSUNIT_ID, 
-                    global::System.Nullable<decimal> Original_GDS_PRICE) {
+                    global::System.Nullable<decimal> Original_GDS_PRICE, 
+                    string Original_GDS_MODEL) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((decimal)(GDS_ID));
             if ((GDS_IMG == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -12140,62 +14875,76 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((decimal)(Original_GDS_ID));
-            if ((Original_GDS_NAME == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            if ((GDS_MODEL == null)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_GDS_NAME));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(GDS_MODEL));
+            }
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(Original_GDS_ID));
+            if ((Original_GDS_NAME == null)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_GDS_NAME));
             }
             if ((Original_GDS_QTY.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((decimal)(Original_GDS_QTY.Value));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((decimal)(Original_GDS_QTY.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             if ((Original_SLVS_NO == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_SLVS_NO));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_SLVS_NO));
             }
             if ((Original_GDSTYPE_NO == null)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_GDSTYPE_NO));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_GDSTYPE_NO));
             }
             if ((Original_GDSGRADE_NO == null)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_GDSGRADE_NO));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_GDSGRADE_NO));
             }
             if ((Original_GDSUNIT_ID == null)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_GDSUNIT_ID));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_GDSUNIT_ID));
             }
             if ((Original_GDS_PRICE.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((decimal)(Original_GDS_PRICE.Value));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((decimal)(Original_GDS_PRICE.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            if ((Original_GDS_MODEL == null)) {
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_GDS_MODEL));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -12226,6 +14975,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     string GDSGRADE_NO, 
                     string GDSUNIT_ID, 
                     global::System.Nullable<decimal> GDS_PRICE, 
+                    string GDS_MODEL, 
                     decimal Original_GDS_ID, 
                     string Original_GDS_NAME, 
                     global::System.Nullable<decimal> Original_GDS_QTY, 
@@ -12233,8 +14983,9 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     string Original_GDSTYPE_NO, 
                     string Original_GDSGRADE_NO, 
                     string Original_GDSUNIT_ID, 
-                    global::System.Nullable<decimal> Original_GDS_PRICE) {
-            return this.Update(Original_GDS_ID, GDS_IMG, GDS_NAME, GDS_QTY, SLVS_NO, GDSTYPE_NO, GDSGRADE_NO, GDSUNIT_ID, GDS_PRICE, Original_GDS_ID, Original_GDS_NAME, Original_GDS_QTY, Original_SLVS_NO, Original_GDSTYPE_NO, Original_GDSGRADE_NO, Original_GDSUNIT_ID, Original_GDS_PRICE);
+                    global::System.Nullable<decimal> Original_GDS_PRICE, 
+                    string Original_GDS_MODEL) {
+            return this.Update(Original_GDS_ID, GDS_IMG, GDS_NAME, GDS_QTY, SLVS_NO, GDSTYPE_NO, GDSGRADE_NO, GDSUNIT_ID, GDS_PRICE, GDS_MODEL, Original_GDS_ID, Original_GDS_NAME, Original_GDS_QTY, Original_SLVS_NO, Original_GDSTYPE_NO, Original_GDSGRADE_NO, Original_GDSUNIT_ID, Original_GDS_PRICE, Original_GDS_MODEL);
         }
     }
     
@@ -12367,7 +15118,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""B5171580"".""GOODSGRADE"" WHERE ((""GDSGRADE_NO"" = :Original_GDSGRADE_NO) AND ((:IsNull_GDSGRADE_DESC = 1 AND ""GDSGRADE_DESC"" IS NULL) OR (""GDSGRADE_DESC"" = :Original_GDSGRADE_DESC)) AND ((:IsNull_GDSGRADE_PERIOD = 1 AND ""GDSGRADE_PERIOD"" IS NULL) OR (""GDSGRADE_PERIOD"" = :Original_GDSGRADE_PERIOD)) AND ((:IsNull_GDSGRADE_PENALTY = 1 AND ""GDSGRADE_PENALTY"" IS NULL) OR (""GDSGRADE_PENALTY"" = :Original_GDSGRADE_PENALTY)) AND ((:IsNull_GDSGRADE_PRICERATE = 1 AND ""GDSGRADE_PRICERATE"" IS NULL) OR (""GDSGRADE_PRICERATE"" = :Original_GDSGRADE_PRICERATE)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""B5171580"".""GOODSGRADE"" WHERE ((""GDSGRADE_NO"" = :Original_GDSGRADE_NO) AND (""GDSGRADE_DESC"" = :Original_GDSGRADE_DESC) AND ((:IsNull_GDSGRADE_PERIOD = 1 AND ""GDSGRADE_PERIOD"" IS NULL) OR (""GDSGRADE_PERIOD"" = :Original_GDSGRADE_PERIOD)) AND ((:IsNull_GDSGRADE_PENALTY = 1 AND ""GDSGRADE_PENALTY"" IS NULL) OR (""GDSGRADE_PENALTY"" = :Original_GDSGRADE_PENALTY)) AND ((:IsNull_GDSGRADE_PRICERATE = 1 AND ""GDSGRADE_PRICERATE"" IS NULL) OR (""GDSGRADE_PRICERATE"" = :Original_GDSGRADE_PRICERATE)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDSGRADE_NO";
@@ -12377,16 +15128,6 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "GDSGRADE_NO";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._adapter.DeleteCommand.Parameters.Add(param);
-            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
-            param.ParameterName = "IsNull_GDSGRADE_DESC";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
-            param.Size = 4;
-            param.IsNullable = true;
-            param.SourceColumn = "GDSGRADE_DESC";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            param.SourceColumnNullMapping = true;
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDSGRADE_DESC";
@@ -12418,7 +15159,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.ParameterName = "IsNull_GDSGRADE_PENALTY";
             param.DbType = global::System.Data.DbType.Int32;
             param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
-            param.Size = 4;
+            param.Size = 22;
             param.IsNullable = true;
             param.SourceColumn = "GDSGRADE_PENALTY";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -12426,8 +15167,9 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDSGRADE_PENALTY";
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
-            param.Size = 4;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Decimal;
+            param.Size = 22;
             param.IsNullable = true;
             param.SourceColumn = "GDSGRADE_PENALTY";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -12481,8 +15223,9 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "GDSGRADE_PENALTY";
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
-            param.Size = 4;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Decimal;
+            param.Size = 22;
             param.IsNullable = true;
             param.SourceColumn = "GDSGRADE_PENALTY";
             this._adapter.InsertCommand.Parameters.Add(param);
@@ -12496,7 +15239,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE ""B5171580"".""GOODSGRADE"" SET ""GDSGRADE_NO"" = :GDSGRADE_NO, ""GDSGRADE_DESC"" = :GDSGRADE_DESC, ""GDSGRADE_PERIOD"" = :GDSGRADE_PERIOD, ""GDSGRADE_PENALTY"" = :GDSGRADE_PENALTY, ""GDSGRADE_PRICERATE"" = :GDSGRADE_PRICERATE WHERE ((""GDSGRADE_NO"" = :Original_GDSGRADE_NO) AND ((:IsNull_GDSGRADE_DESC = 1 AND ""GDSGRADE_DESC"" IS NULL) OR (""GDSGRADE_DESC"" = :Original_GDSGRADE_DESC)) AND ((:IsNull_GDSGRADE_PERIOD = 1 AND ""GDSGRADE_PERIOD"" IS NULL) OR (""GDSGRADE_PERIOD"" = :Original_GDSGRADE_PERIOD)) AND ((:IsNull_GDSGRADE_PENALTY = 1 AND ""GDSGRADE_PENALTY"" IS NULL) OR (""GDSGRADE_PENALTY"" = :Original_GDSGRADE_PENALTY)) AND ((:IsNull_GDSGRADE_PRICERATE = 1 AND ""GDSGRADE_PRICERATE"" IS NULL) OR (""GDSGRADE_PRICERATE"" = :Original_GDSGRADE_PRICERATE)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE ""B5171580"".""GOODSGRADE"" SET ""GDSGRADE_NO"" = :GDSGRADE_NO, ""GDSGRADE_DESC"" = :GDSGRADE_DESC, ""GDSGRADE_PERIOD"" = :GDSGRADE_PERIOD, ""GDSGRADE_PENALTY"" = :GDSGRADE_PENALTY, ""GDSGRADE_PRICERATE"" = :GDSGRADE_PRICERATE WHERE ((""GDSGRADE_NO"" = :Original_GDSGRADE_NO) AND (""GDSGRADE_DESC"" = :Original_GDSGRADE_DESC) AND ((:IsNull_GDSGRADE_PERIOD = 1 AND ""GDSGRADE_PERIOD"" IS NULL) OR (""GDSGRADE_PERIOD"" = :Original_GDSGRADE_PERIOD)) AND ((:IsNull_GDSGRADE_PENALTY = 1 AND ""GDSGRADE_PENALTY"" IS NULL) OR (""GDSGRADE_PENALTY"" = :Original_GDSGRADE_PENALTY)) AND ((:IsNull_GDSGRADE_PRICERATE = 1 AND ""GDSGRADE_PRICERATE"" IS NULL) OR (""GDSGRADE_PRICERATE"" = :Original_GDSGRADE_PRICERATE)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "GDSGRADE_NO";
@@ -12522,8 +15265,9 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "GDSGRADE_PENALTY";
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
-            param.Size = 4;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Decimal;
+            param.Size = 22;
             param.IsNullable = true;
             param.SourceColumn = "GDSGRADE_PENALTY";
             this._adapter.UpdateCommand.Parameters.Add(param);
@@ -12543,16 +15287,6 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "GDSGRADE_NO";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._adapter.UpdateCommand.Parameters.Add(param);
-            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
-            param.ParameterName = "IsNull_GDSGRADE_DESC";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
-            param.Size = 4;
-            param.IsNullable = true;
-            param.SourceColumn = "GDSGRADE_DESC";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            param.SourceColumnNullMapping = true;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDSGRADE_DESC";
@@ -12584,7 +15318,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.ParameterName = "IsNull_GDSGRADE_PENALTY";
             param.DbType = global::System.Data.DbType.Int32;
             param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
-            param.Size = 4;
+            param.Size = 22;
             param.IsNullable = true;
             param.SourceColumn = "GDSGRADE_PENALTY";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -12592,8 +15326,9 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDSGRADE_PENALTY";
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
-            param.Size = 4;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Decimal;
+            param.Size = 22;
             param.IsNullable = true;
             param.SourceColumn = "GDSGRADE_PENALTY";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -12629,12 +15364,36 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[1];
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[3];
             this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT GDSGRADE_NO, GDSGRADE_DESC, GDSGRADE_PERIOD, GDSGRADE_PENALTY, GDSGRADE_PR" +
                 "ICERATE FROM B5171580.GOODSGRADE";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT GDSGRADE_NO, GDSGRADE_DESC, GDSGRADE_PERIOD, GDSGRADE_PENALTY, GDSGRADE_PR" +
+                "ICERATE\r\nFROM B5171580.GOODSGRADE\r\nWHERE GDSGRADE_DESC  = :aa";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "GDSGRADE_DESC";
+            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT GDSGRADE_NO, GDSGRADE_DESC, GDSGRADE_PERIOD, GDSGRADE_PENALTY, GDSGRADE_PR" +
+                "ICERATE\r\nFROM B5171580.GOODSGRADE\r\nWHERE GDSGRADE_NO = :aa";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Char;
+            param.Size = 1;
+            param.IsNullable = true;
+            param.SourceColumn = "GDSGRADE_NO";
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12656,6 +15415,40 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSet1.GOODSGRADEDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.GOODSGRADEDataTable dataTable = new DataSet1.GOODSGRADEDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSGRADEDataTable GetDataByDesc(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((aa == null)) {
+                throw new global::System.ArgumentNullException("aa");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
+            DataSet1.GOODSGRADEDataTable dataTable = new DataSet1.GOODSGRADEDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSGRADEDataTable GetDataByNo(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((aa == null)) {
+                throw new global::System.ArgumentNullException("aa");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
             DataSet1.GOODSGRADEDataTable dataTable = new DataSet1.GOODSGRADEDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -12694,7 +15487,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_GDSGRADE_NO, string Original_GDSGRADE_DESC, string Original_GDSGRADE_PERIOD, string Original_GDSGRADE_PENALTY, global::System.Nullable<decimal> Original_GDSGRADE_PRICERATE) {
+        public virtual int Delete(string Original_GDSGRADE_NO, string Original_GDSGRADE_DESC, string Original_GDSGRADE_PERIOD, global::System.Nullable<decimal> Original_GDSGRADE_PENALTY, global::System.Nullable<decimal> Original_GDSGRADE_PRICERATE) {
             if ((Original_GDSGRADE_NO == null)) {
                 throw new global::System.ArgumentNullException("Original_GDSGRADE_NO");
             }
@@ -12702,36 +15495,34 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_GDSGRADE_NO));
             }
             if ((Original_GDSGRADE_DESC == null)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_GDSGRADE_DESC");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_GDSGRADE_DESC));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_GDSGRADE_DESC));
             }
             if ((Original_GDSGRADE_PERIOD == null)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_GDSGRADE_PERIOD));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_GDSGRADE_PERIOD));
             }
-            if ((Original_GDSGRADE_PENALTY == null)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            if ((Original_GDSGRADE_PENALTY.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((decimal)(Original_GDSGRADE_PENALTY.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_GDSGRADE_PENALTY));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             if ((Original_GDSGRADE_PRICERATE.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((decimal)(Original_GDSGRADE_PRICERATE.Value));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((decimal)(Original_GDSGRADE_PRICERATE.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -12753,7 +15544,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string GDSGRADE_NO, string GDSGRADE_DESC, string GDSGRADE_PERIOD, string GDSGRADE_PENALTY, global::System.Nullable<decimal> GDSGRADE_PRICERATE) {
+        public virtual int Insert(string GDSGRADE_NO, string GDSGRADE_DESC, string GDSGRADE_PERIOD, global::System.Nullable<decimal> GDSGRADE_PENALTY, global::System.Nullable<decimal> GDSGRADE_PRICERATE) {
             if ((GDSGRADE_NO == null)) {
                 throw new global::System.ArgumentNullException("GDSGRADE_NO");
             }
@@ -12761,7 +15552,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(GDSGRADE_NO));
             }
             if ((GDSGRADE_DESC == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("GDSGRADE_DESC");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(GDSGRADE_DESC));
@@ -12772,11 +15563,11 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(GDSGRADE_PERIOD));
             }
-            if ((GDSGRADE_PENALTY == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            if ((GDSGRADE_PENALTY.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(GDSGRADE_PENALTY.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(GDSGRADE_PENALTY));
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             if ((GDSGRADE_PRICERATE.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(GDSGRADE_PRICERATE.Value));
@@ -12804,7 +15595,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string GDSGRADE_NO, string GDSGRADE_DESC, string GDSGRADE_PERIOD, string GDSGRADE_PENALTY, global::System.Nullable<decimal> GDSGRADE_PRICERATE, string Original_GDSGRADE_NO, string Original_GDSGRADE_DESC, string Original_GDSGRADE_PERIOD, string Original_GDSGRADE_PENALTY, global::System.Nullable<decimal> Original_GDSGRADE_PRICERATE) {
+        public virtual int Update(string GDSGRADE_NO, string GDSGRADE_DESC, string GDSGRADE_PERIOD, global::System.Nullable<decimal> GDSGRADE_PENALTY, global::System.Nullable<decimal> GDSGRADE_PRICERATE, string Original_GDSGRADE_NO, string Original_GDSGRADE_DESC, string Original_GDSGRADE_PERIOD, global::System.Nullable<decimal> Original_GDSGRADE_PENALTY, global::System.Nullable<decimal> Original_GDSGRADE_PRICERATE) {
             if ((GDSGRADE_NO == null)) {
                 throw new global::System.ArgumentNullException("GDSGRADE_NO");
             }
@@ -12812,7 +15603,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(GDSGRADE_NO));
             }
             if ((GDSGRADE_DESC == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("GDSGRADE_DESC");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(GDSGRADE_DESC));
@@ -12823,11 +15614,11 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(GDSGRADE_PERIOD));
             }
-            if ((GDSGRADE_PENALTY == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            if ((GDSGRADE_PENALTY.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(GDSGRADE_PENALTY.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(GDSGRADE_PENALTY));
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             if ((GDSGRADE_PRICERATE.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((decimal)(GDSGRADE_PRICERATE.Value));
@@ -12842,36 +15633,34 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_GDSGRADE_NO));
             }
             if ((Original_GDSGRADE_DESC == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_GDSGRADE_DESC");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_GDSGRADE_DESC));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_GDSGRADE_DESC));
             }
             if ((Original_GDSGRADE_PERIOD == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_GDSGRADE_PERIOD));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_GDSGRADE_PERIOD));
             }
-            if ((Original_GDSGRADE_PENALTY == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            if ((Original_GDSGRADE_PENALTY.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(Original_GDSGRADE_PENALTY.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_GDSGRADE_PENALTY));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             if ((Original_GDSGRADE_PRICERATE.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((decimal)(Original_GDSGRADE_PRICERATE.Value));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((decimal)(Original_GDSGRADE_PRICERATE.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -12893,7 +15682,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string GDSGRADE_DESC, string GDSGRADE_PERIOD, string GDSGRADE_PENALTY, global::System.Nullable<decimal> GDSGRADE_PRICERATE, string Original_GDSGRADE_NO, string Original_GDSGRADE_DESC, string Original_GDSGRADE_PERIOD, string Original_GDSGRADE_PENALTY, global::System.Nullable<decimal> Original_GDSGRADE_PRICERATE) {
+        public virtual int Update(string GDSGRADE_DESC, string GDSGRADE_PERIOD, global::System.Nullable<decimal> GDSGRADE_PENALTY, global::System.Nullable<decimal> GDSGRADE_PRICERATE, string Original_GDSGRADE_NO, string Original_GDSGRADE_DESC, string Original_GDSGRADE_PERIOD, global::System.Nullable<decimal> Original_GDSGRADE_PENALTY, global::System.Nullable<decimal> Original_GDSGRADE_PRICERATE) {
             return this.Update(Original_GDSGRADE_NO, GDSGRADE_DESC, GDSGRADE_PERIOD, GDSGRADE_PENALTY, GDSGRADE_PRICERATE, Original_GDSGRADE_NO, Original_GDSGRADE_DESC, Original_GDSGRADE_PERIOD, Original_GDSGRADE_PENALTY, Original_GDSGRADE_PRICERATE);
         }
     }
@@ -13025,10 +15814,9 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM \"B5171580\".\"GOODSSTORE\" WHERE ((\"STR_ID\" = :Original_STR_ID) AND ((:I" +
-                "sNull_STR_NAME = 1 AND \"STR_NAME\" IS NULL) OR (\"STR_NAME\" = :Original_STR_NAME))" +
-                " AND ((:IsNull_STR_TEL = 1 AND \"STR_TEL\" IS NULL) OR (\"STR_TEL\" = :Original_STR_" +
-                "TEL)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM \"B5171580\".\"GOODSSTORE\" WHERE ((\"STR_ID\" = :Original_STR_ID) AND (\"ST" +
+                "R_NAME\" = :Original_STR_NAME) AND ((:IsNull_STR_TEL = 1 AND \"STR_TEL\" IS NULL) O" +
+                "R (\"STR_TEL\" = :Original_STR_TEL)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_STR_ID";
@@ -13038,16 +15826,6 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "STR_ID";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._adapter.DeleteCommand.Parameters.Add(param);
-            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
-            param.ParameterName = "IsNull_STR_NAME";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
-            param.Size = 50;
-            param.IsNullable = true;
-            param.SourceColumn = "STR_NAME";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            param.SourceColumnNullMapping = true;
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_STR_NAME";
@@ -13104,7 +15882,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE ""B5171580"".""GOODSSTORE"" SET ""STR_ID"" = :STR_ID, ""STR_NAME"" = :STR_NAME, ""STR_TEL"" = :STR_TEL WHERE ((""STR_ID"" = :Original_STR_ID) AND ((:IsNull_STR_NAME = 1 AND ""STR_NAME"" IS NULL) OR (""STR_NAME"" = :Original_STR_NAME)) AND ((:IsNull_STR_TEL = 1 AND ""STR_TEL"" IS NULL) OR (""STR_TEL"" = :Original_STR_TEL)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE ""B5171580"".""GOODSSTORE"" SET ""STR_ID"" = :STR_ID, ""STR_NAME"" = :STR_NAME, ""STR_TEL"" = :STR_TEL WHERE ((""STR_ID"" = :Original_STR_ID) AND (""STR_NAME"" = :Original_STR_NAME) AND ((:IsNull_STR_TEL = 1 AND ""STR_TEL"" IS NULL) OR (""STR_TEL"" = :Original_STR_TEL)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "STR_ID";
@@ -13136,16 +15914,6 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "STR_ID";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._adapter.UpdateCommand.Parameters.Add(param);
-            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
-            param.ParameterName = "IsNull_STR_NAME";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
-            param.Size = 50;
-            param.IsNullable = true;
-            param.SourceColumn = "STR_NAME";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            param.SourceColumnNullMapping = true;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_STR_NAME";
@@ -13185,11 +15953,33 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[1];
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[3];
             this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT STR_ID, STR_NAME, STR_TEL FROM B5171580.GOODSSTORE";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT STR_ID, STR_NAME, STR_TEL\r\nFROM B5171580.GOODSSTORE\r\nWHERE str_name = :aa";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = "STR_NAME";
+            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT STR_ID\r\nFROM B5171580.GOODSSTORE\r\nWHERE STR_NAME = :str_name";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":str_name";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = "STR_NAME";
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13211,6 +16001,40 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSet1.GOODSSTOREDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.GOODSSTOREDataTable dataTable = new DataSet1.GOODSSTOREDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSSTOREDataTable GetDataByName(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((aa == null)) {
+                throw new global::System.ArgumentNullException("aa");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
+            DataSet1.GOODSSTOREDataTable dataTable = new DataSet1.GOODSSTOREDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSSTOREDataTable GetIdByName(string str_name) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((str_name == null)) {
+                throw new global::System.ArgumentNullException("str_name");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(str_name));
+            }
             DataSet1.GOODSSTOREDataTable dataTable = new DataSet1.GOODSSTOREDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -13252,20 +16076,18 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         public virtual int Delete(decimal Original_STR_ID, string Original_STR_NAME, string Original_STR_TEL) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((decimal)(Original_STR_ID));
             if ((Original_STR_NAME == null)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_STR_NAME");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_STR_NAME));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_STR_NAME));
             }
             if ((Original_STR_TEL == null)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_STR_TEL));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_STR_TEL));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -13290,7 +16112,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         public virtual int Insert(decimal STR_ID, string STR_NAME, string STR_TEL) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((decimal)(STR_ID));
             if ((STR_NAME == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("STR_NAME");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(STR_NAME));
@@ -13324,7 +16146,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         public virtual int Update(decimal STR_ID, string STR_NAME, string STR_TEL, decimal Original_STR_ID, string Original_STR_NAME, string Original_STR_TEL) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((decimal)(STR_ID));
             if ((STR_NAME == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("STR_NAME");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(STR_NAME));
@@ -13337,20 +16159,18 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             }
             this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(Original_STR_ID));
             if ((Original_STR_NAME == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_STR_NAME");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_STR_NAME));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_STR_NAME));
             }
             if ((Original_STR_TEL == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_STR_TEL));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_STR_TEL));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -13504,8 +16324,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.DeleteCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
             this._adapter.DeleteCommand.CommandText = "DELETE FROM \"B5171580\".\"GOODSTYPE\" WHERE ((\"GDSTYPE_NO\" = :Original_GDSTYPE_NO) A" +
-                "ND ((:IsNull_GDSTYPE_DESC = 1 AND \"GDSTYPE_DESC\" IS NULL) OR (\"GDSTYPE_DESC\" = :" +
-                "Original_GDSTYPE_DESC)))";
+                "ND (\"GDSTYPE_DESC\" = :Original_GDSTYPE_DESC))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDSTYPE_NO";
@@ -13514,16 +16333,6 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "GDSTYPE_NO";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._adapter.DeleteCommand.Parameters.Add(param);
-            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
-            param.ParameterName = "IsNull_GDSTYPE_DESC";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
-            param.Size = 10;
-            param.IsNullable = true;
-            param.SourceColumn = "GDSTYPE_DESC";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            param.SourceColumnNullMapping = true;
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDSTYPE_DESC";
@@ -13555,9 +16364,8 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.UpdateCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE \"B5171580\".\"GOODSTYPE\" SET \"GDSTYPE_NO\" = :GDSTYPE_NO, \"GDSTYPE_DESC\" = :G" +
-                "DSTYPE_DESC WHERE ((\"GDSTYPE_NO\" = :Original_GDSTYPE_NO) AND ((:IsNull_GDSTYPE_D" +
-                "ESC = 1 AND \"GDSTYPE_DESC\" IS NULL) OR (\"GDSTYPE_DESC\" = :Original_GDSTYPE_DESC)" +
-                "))";
+                "DSTYPE_DESC WHERE ((\"GDSTYPE_NO\" = :Original_GDSTYPE_NO) AND (\"GDSTYPE_DESC\" = :" +
+                "Original_GDSTYPE_DESC))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "GDSTYPE_NO";
@@ -13582,16 +16390,6 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
-            param.ParameterName = "IsNull_GDSTYPE_DESC";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
-            param.Size = 10;
-            param.IsNullable = true;
-            param.SourceColumn = "GDSTYPE_DESC";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            param.SourceColumnNullMapping = true;
-            this._adapter.UpdateCommand.Parameters.Add(param);
-            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDSTYPE_DESC";
             param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
             param.Size = 10;
@@ -13611,11 +16409,34 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[1];
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[3];
             this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT GDSTYPE_NO, GDSTYPE_DESC FROM B5171580.GOODSTYPE";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT GDSTYPE_NO, GDSTYPE_DESC\r\nFROM B5171580.GOODSTYPE\r\nWHERE GDSTYPE_NO = :aa";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 2;
+            param.IsNullable = true;
+            param.SourceColumn = "GDSTYPE_NO";
+            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT GDSTYPE_NO, GDSTYPE_DESC\r\nFROM B5171580.GOODSTYPE\r\nWHERE gdstype_desc = :a" +
+                "a";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 10;
+            param.IsNullable = true;
+            param.SourceColumn = "GDSTYPE_DESC";
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13637,6 +16458,59 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSet1.GOODSTYPEDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.GOODSTYPEDataTable dataTable = new DataSet1.GOODSTYPEDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(DataSet1.GOODSTYPEDataTable dataTable, string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((aa == null)) {
+                throw new global::System.ArgumentNullException("aa");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSTYPEDataTable GetDataByNo(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((aa == null)) {
+                throw new global::System.ArgumentNullException("aa");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
+            DataSet1.GOODSTYPEDataTable dataTable = new DataSet1.GOODSTYPEDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSTYPEDataTable GetDataByDesc(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((aa == null)) {
+                throw new global::System.ArgumentNullException("aa");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
             DataSet1.GOODSTYPEDataTable dataTable = new DataSet1.GOODSTYPEDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -13683,12 +16557,10 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_GDSTYPE_NO));
             }
             if ((Original_GDSTYPE_DESC == null)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_GDSTYPE_DESC");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_GDSTYPE_DESC));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_GDSTYPE_DESC));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -13718,7 +16590,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(GDSTYPE_NO));
             }
             if ((GDSTYPE_DESC == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("GDSTYPE_DESC");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(GDSTYPE_DESC));
@@ -13751,7 +16623,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(GDSTYPE_NO));
             }
             if ((GDSTYPE_DESC == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("GDSTYPE_DESC");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(GDSTYPE_DESC));
@@ -13763,12 +16635,10 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_GDSTYPE_NO));
             }
             if ((Original_GDSTYPE_DESC == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_GDSTYPE_DESC");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_GDSTYPE_DESC));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_GDSTYPE_DESC));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -13922,8 +16792,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.DeleteCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
             this._adapter.DeleteCommand.CommandText = "DELETE FROM \"B5171580\".\"GOODSUNIT\" WHERE ((\"GDSUNIT_ID\" = :Original_GDSUNIT_ID) A" +
-                "ND ((:IsNull_GDSUNIT_DESC = 1 AND \"GDSUNIT_DESC\" IS NULL) OR (\"GDSUNIT_DESC\" = :" +
-                "Original_GDSUNIT_DESC)))";
+                "ND (\"GDSUNIT_DESC\" = :Original_GDSUNIT_DESC))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDSUNIT_ID";
@@ -13932,16 +16801,6 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "GDSUNIT_ID";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._adapter.DeleteCommand.Parameters.Add(param);
-            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
-            param.ParameterName = "IsNull_GDSUNIT_DESC";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
-            param.Size = 6;
-            param.IsNullable = true;
-            param.SourceColumn = "GDSUNIT_DESC";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            param.SourceColumnNullMapping = true;
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDSUNIT_DESC";
@@ -13973,9 +16832,8 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             this._adapter.UpdateCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE \"B5171580\".\"GOODSUNIT\" SET \"GDSUNIT_ID\" = :GDSUNIT_ID, \"GDSUNIT_DESC\" = :G" +
-                "DSUNIT_DESC WHERE ((\"GDSUNIT_ID\" = :Original_GDSUNIT_ID) AND ((:IsNull_GDSUNIT_D" +
-                "ESC = 1 AND \"GDSUNIT_DESC\" IS NULL) OR (\"GDSUNIT_DESC\" = :Original_GDSUNIT_DESC)" +
-                "))";
+                "DSUNIT_DESC WHERE ((\"GDSUNIT_ID\" = :Original_GDSUNIT_ID) AND (\"GDSUNIT_DESC\" = :" +
+                "Original_GDSUNIT_DESC))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "GDSUNIT_ID";
@@ -14000,16 +16858,6 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
-            param.ParameterName = "IsNull_GDSUNIT_DESC";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
-            param.Size = 6;
-            param.IsNullable = true;
-            param.SourceColumn = "GDSUNIT_DESC";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            param.SourceColumnNullMapping = true;
-            this._adapter.UpdateCommand.Parameters.Add(param);
-            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_GDSUNIT_DESC";
             param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
             param.Size = 6;
@@ -14029,11 +16877,35 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[1];
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[3];
             this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT GDSUNIT_ID, GDSUNIT_DESC FROM B5171580.GOODSUNIT";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT GDSUNIT_ID, GDSUNIT_DESC\r\nFROM B5171580.GOODSUNIT\r\nWHERE gdsunit_desc = :a" +
+                "a";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 6;
+            param.IsNullable = true;
+            param.SourceColumn = "GDSUNIT_DESC";
+            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT GDSUNIT_ID , GDSUNIT_DESC\r\nFROM B5171580.GOODSUNIT\r\nWHERE GDSUNIT_ID = :aa" +
+                "";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 2;
+            param.IsNullable = true;
+            param.SourceColumn = "GDSUNIT_ID";
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14055,6 +16927,40 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSet1.GOODSUNITDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.GOODSUNITDataTable dataTable = new DataSet1.GOODSUNITDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSUNITDataTable GetDataByDesc(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((aa == null)) {
+                throw new global::System.ArgumentNullException("aa");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
+            DataSet1.GOODSUNITDataTable dataTable = new DataSet1.GOODSUNITDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODSUNITDataTable GetDataByNo(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((aa == null)) {
+                throw new global::System.ArgumentNullException("aa");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
             DataSet1.GOODSUNITDataTable dataTable = new DataSet1.GOODSUNITDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -14101,12 +17007,10 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_GDSUNIT_ID));
             }
             if ((Original_GDSUNIT_DESC == null)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_GDSUNIT_DESC");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_GDSUNIT_DESC));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_GDSUNIT_DESC));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -14136,7 +17040,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(GDSUNIT_ID));
             }
             if ((GDSUNIT_DESC == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("GDSUNIT_DESC");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(GDSUNIT_DESC));
@@ -14169,7 +17073,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(GDSUNIT_ID));
             }
             if ((GDSUNIT_DESC == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("GDSUNIT_DESC");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(GDSUNIT_DESC));
@@ -14181,12 +17085,10 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_GDSUNIT_ID));
             }
             if ((Original_GDSUNIT_DESC == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_GDSUNIT_DESC");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_GDSUNIT_DESC));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_GDSUNIT_DESC));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -15393,10 +18295,11 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("RNT_QTY", "RNT_QTY");
             tableMapping.ColumnMappings.Add("STF_ID", "STF_ID");
             tableMapping.ColumnMappings.Add("RNTSTATE_NO", "RNTSTATE_NO");
+            tableMapping.ColumnMappings.Add("RNT_RETURNDATE", "RNT_RETURNDATE");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""B5171580"".""RENT"" WHERE ((""RNT_NO"" = :Original_RNT_NO) AND (""GDS_ID"" = :Original_GDS_ID) AND (""C_ID"" = :Original_C_ID) AND ((:IsNull_RNT_DATE = 1 AND ""RNT_DATE"" IS NULL) OR (""RNT_DATE"" = :Original_RNT_DATE)) AND ((:IsNull_RNT_QTY = 1 AND ""RNT_QTY"" IS NULL) OR (""RNT_QTY"" = :Original_RNT_QTY)) AND ((:IsNull_STF_ID = 1 AND ""STF_ID"" IS NULL) OR (""STF_ID"" = :Original_STF_ID)) AND ((:IsNull_RNTSTATE_NO = 1 AND ""RNTSTATE_NO"" IS NULL) OR (""RNTSTATE_NO"" = :Original_RNTSTATE_NO)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""B5171580"".""RENT"" WHERE ((""RNT_NO"" = :Original_RNT_NO) AND (""GDS_ID"" = :Original_GDS_ID) AND (""C_ID"" = :Original_C_ID) AND ((:IsNull_RNT_DATE = 1 AND ""RNT_DATE"" IS NULL) OR (""RNT_DATE"" = :Original_RNT_DATE)) AND ((:IsNull_RNT_QTY = 1 AND ""RNT_QTY"" IS NULL) OR (""RNT_QTY"" = :Original_RNT_QTY)) AND ((:IsNull_STF_ID = 1 AND ""STF_ID"" IS NULL) OR (""STF_ID"" = :Original_STF_ID)) AND ((:IsNull_RNTSTATE_NO = 1 AND ""RNTSTATE_NO"" IS NULL) OR (""RNTSTATE_NO"" = :Original_RNTSTATE_NO)) AND ((:IsNull_RNT_RETURNDATE = 1 AND ""RNT_RETURNDATE"" IS NULL) OR (""RNT_RETURNDATE"" = :Original_RNT_RETURNDATE)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_RNT_NO";
@@ -15500,11 +18403,30 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.SourceColumn = "RNTSTATE_NO";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "IsNull_RNT_RETURNDATE";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
+            param.Size = 7;
+            param.IsNullable = true;
+            param.SourceColumn = "RNT_RETURNDATE";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.DeleteCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "Original_RNT_RETURNDATE";
+            param.DbType = global::System.Data.DbType.Date;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Date;
+            param.Size = 7;
+            param.IsNullable = true;
+            param.SourceColumn = "RNT_RETURNDATE";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.DeleteCommand.Parameters.Add(param);
             this._adapter.InsertCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO \"B5171580\".\"RENT\" (\"RNT_NO\", \"GDS_ID\", \"C_ID\", \"RNT_DATE\", \"RNT_QTY\"," +
-                " \"STF_ID\", \"RNTSTATE_NO\") VALUES (:RNT_NO, :GDS_ID, :C_ID, :RNT_DATE, :RNT_QTY, " +
-                ":STF_ID, :RNTSTATE_NO)";
+                " \"STF_ID\", \"RNTSTATE_NO\", \"RNT_RETURNDATE\") VALUES (:RNT_NO, :GDS_ID, :C_ID, :RN" +
+                "T_DATE, :RNT_QTY, :STF_ID, :RNTSTATE_NO, :RNT_RETURNDATE)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "RNT_NO";
@@ -15561,9 +18483,17 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.IsNullable = true;
             param.SourceColumn = "RNTSTATE_NO";
             this._adapter.InsertCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "RNT_RETURNDATE";
+            param.DbType = global::System.Data.DbType.Date;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Date;
+            param.Size = 7;
+            param.IsNullable = true;
+            param.SourceColumn = "RNT_RETURNDATE";
+            this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE ""B5171580"".""RENT"" SET ""RNT_NO"" = :RNT_NO, ""GDS_ID"" = :GDS_ID, ""C_ID"" = :C_ID, ""RNT_DATE"" = :RNT_DATE, ""RNT_QTY"" = :RNT_QTY, ""STF_ID"" = :STF_ID, ""RNTSTATE_NO"" = :RNTSTATE_NO WHERE ((""RNT_NO"" = :Original_RNT_NO) AND (""GDS_ID"" = :Original_GDS_ID) AND (""C_ID"" = :Original_C_ID) AND ((:IsNull_RNT_DATE = 1 AND ""RNT_DATE"" IS NULL) OR (""RNT_DATE"" = :Original_RNT_DATE)) AND ((:IsNull_RNT_QTY = 1 AND ""RNT_QTY"" IS NULL) OR (""RNT_QTY"" = :Original_RNT_QTY)) AND ((:IsNull_STF_ID = 1 AND ""STF_ID"" IS NULL) OR (""STF_ID"" = :Original_STF_ID)) AND ((:IsNull_RNTSTATE_NO = 1 AND ""RNTSTATE_NO"" IS NULL) OR (""RNTSTATE_NO"" = :Original_RNTSTATE_NO)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE ""B5171580"".""RENT"" SET ""RNT_NO"" = :RNT_NO, ""GDS_ID"" = :GDS_ID, ""C_ID"" = :C_ID, ""RNT_DATE"" = :RNT_DATE, ""RNT_QTY"" = :RNT_QTY, ""STF_ID"" = :STF_ID, ""RNTSTATE_NO"" = :RNTSTATE_NO, ""RNT_RETURNDATE"" = :RNT_RETURNDATE WHERE ((""RNT_NO"" = :Original_RNT_NO) AND (""GDS_ID"" = :Original_GDS_ID) AND (""C_ID"" = :Original_C_ID) AND ((:IsNull_RNT_DATE = 1 AND ""RNT_DATE"" IS NULL) OR (""RNT_DATE"" = :Original_RNT_DATE)) AND ((:IsNull_RNT_QTY = 1 AND ""RNT_QTY"" IS NULL) OR (""RNT_QTY"" = :Original_RNT_QTY)) AND ((:IsNull_STF_ID = 1 AND ""STF_ID"" IS NULL) OR (""STF_ID"" = :Original_STF_ID)) AND ((:IsNull_RNTSTATE_NO = 1 AND ""RNTSTATE_NO"" IS NULL) OR (""RNTSTATE_NO"" = :Original_RNTSTATE_NO)) AND ((:IsNull_RNT_RETURNDATE = 1 AND ""RNT_RETURNDATE"" IS NULL) OR (""RNT_RETURNDATE"" = :Original_RNT_RETURNDATE)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "RNT_NO";
@@ -15619,6 +18549,14 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.Size = 1;
             param.IsNullable = true;
             param.SourceColumn = "RNTSTATE_NO";
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "RNT_RETURNDATE";
+            param.DbType = global::System.Data.DbType.Date;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Date;
+            param.Size = 7;
+            param.IsNullable = true;
+            param.SourceColumn = "RNT_RETURNDATE";
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
             param.ParameterName = "Original_RNT_NO";
@@ -15722,6 +18660,25 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             param.SourceColumn = "RNTSTATE_NO";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "IsNull_RNT_RETURNDATE";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Int32;
+            param.Size = 7;
+            param.IsNullable = true;
+            param.SourceColumn = "RNT_RETURNDATE";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            param.SourceColumnNullMapping = true;
+            this._adapter.UpdateCommand.Parameters.Add(param);
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = "Original_RNT_RETURNDATE";
+            param.DbType = global::System.Data.DbType.Date;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Date;
+            param.Size = 7;
+            param.IsNullable = true;
+            param.SourceColumn = "RNT_RETURNDATE";
+            param.SourceVersion = global::System.Data.DataRowVersion.Original;
+            this._adapter.UpdateCommand.Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15734,12 +18691,38 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[1];
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[3];
             this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT RNT_NO, GDS_ID, C_ID, RNT_DATE, RNT_QTY, STF_ID, RNTSTATE_NO FROM B5171580" +
-                ".RENT";
+            this._commandCollection[0].CommandText = "SELECT RNT_NO, GDS_ID, C_ID, RNT_DATE, RNT_QTY, STF_ID, RNTSTATE_NO, RNT_RETURNDA" +
+                "TE FROM B5171580.RENT";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT RNT_NO, GDS_ID, C_ID, RNT_DATE, RNT_QTY, STF_ID, RNTSTATE_NO, RNT_RETURNDA" +
+                "TE FROM B5171580.RENT WHERE (C_ID = :aa)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Decimal;
+            param.Size = 22;
+            param.IsNullable = true;
+            param.SourceColumn = "C_ID";
+            this._commandCollection[1].Parameters.Add(param);
+            this._commandCollection[2] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT RNT_NO, GDS_ID, C_ID, RNT_DATE, RNT_QTY, STF_ID, RNTSTATE_NO, RNT_RETURNDA" +
+                "TE\r\nFROM B5171580.RENT\r\nWHERE GDS_ID = :aa AND RNTSTATE_NO != \'1\'";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Decimal;
+            param.Size = 22;
+            param.IsNullable = true;
+            param.SourceColumn = "GDS_ID";
+            this._commandCollection[2].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -15761,6 +18744,30 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSet1.RENTDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.RENTDataTable dataTable = new DataSet1.RENTDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.RENTDataTable GetDataByCid(decimal aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((decimal)(aa));
+            DataSet1.RENTDataTable dataTable = new DataSet1.RENTDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.RENTDataTable GetRentingDataByGdsID(decimal aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((decimal)(aa));
             DataSet1.RENTDataTable dataTable = new DataSet1.RENTDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -15799,7 +18806,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(decimal Original_RNT_NO, decimal Original_GDS_ID, decimal Original_C_ID, global::System.Nullable<global::System.DateTime> Original_RNT_DATE, global::System.Nullable<decimal> Original_RNT_QTY, string Original_STF_ID, string Original_RNTSTATE_NO) {
+        public virtual int Delete(decimal Original_RNT_NO, decimal Original_GDS_ID, decimal Original_C_ID, global::System.Nullable<global::System.DateTime> Original_RNT_DATE, global::System.Nullable<decimal> Original_RNT_QTY, string Original_STF_ID, string Original_RNTSTATE_NO, global::System.Nullable<global::System.DateTime> Original_RNT_RETURNDATE) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((decimal)(Original_RNT_NO));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((decimal)(Original_GDS_ID));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((decimal)(Original_C_ID));
@@ -15835,6 +18842,14 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_RNTSTATE_NO));
             }
+            if ((Original_RNT_RETURNDATE.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((System.DateTime)(Original_RNT_RETURNDATE.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -15855,7 +18870,7 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(decimal RNT_NO, decimal GDS_ID, decimal C_ID, global::System.Nullable<global::System.DateTime> RNT_DATE, global::System.Nullable<decimal> RNT_QTY, string STF_ID, string RNTSTATE_NO) {
+        public virtual int Insert(decimal RNT_NO, decimal GDS_ID, decimal C_ID, global::System.Nullable<global::System.DateTime> RNT_DATE, global::System.Nullable<decimal> RNT_QTY, string STF_ID, string RNTSTATE_NO, global::System.Nullable<global::System.DateTime> RNT_RETURNDATE) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((decimal)(RNT_NO));
             this.Adapter.InsertCommand.Parameters[1].Value = ((decimal)(GDS_ID));
             this.Adapter.InsertCommand.Parameters[2].Value = ((decimal)(C_ID));
@@ -15883,6 +18898,12 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = ((string)(RNTSTATE_NO));
             }
+            if ((RNT_RETURNDATE.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((System.DateTime)(RNT_RETURNDATE.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -15903,7 +18924,23 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(decimal RNT_NO, decimal GDS_ID, decimal C_ID, global::System.Nullable<global::System.DateTime> RNT_DATE, global::System.Nullable<decimal> RNT_QTY, string STF_ID, string RNTSTATE_NO, decimal Original_RNT_NO, decimal Original_GDS_ID, decimal Original_C_ID, global::System.Nullable<global::System.DateTime> Original_RNT_DATE, global::System.Nullable<decimal> Original_RNT_QTY, string Original_STF_ID, string Original_RNTSTATE_NO) {
+        public virtual int Update(
+                    decimal RNT_NO, 
+                    decimal GDS_ID, 
+                    decimal C_ID, 
+                    global::System.Nullable<global::System.DateTime> RNT_DATE, 
+                    global::System.Nullable<decimal> RNT_QTY, 
+                    string STF_ID, 
+                    string RNTSTATE_NO, 
+                    global::System.Nullable<global::System.DateTime> RNT_RETURNDATE, 
+                    decimal Original_RNT_NO, 
+                    decimal Original_GDS_ID, 
+                    decimal Original_C_ID, 
+                    global::System.Nullable<global::System.DateTime> Original_RNT_DATE, 
+                    global::System.Nullable<decimal> Original_RNT_QTY, 
+                    string Original_STF_ID, 
+                    string Original_RNTSTATE_NO, 
+                    global::System.Nullable<global::System.DateTime> Original_RNT_RETURNDATE) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((decimal)(RNT_NO));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((decimal)(GDS_ID));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((decimal)(C_ID));
@@ -15931,40 +18968,54 @@ namespace _5171580_김상원.DataSet1TableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(RNTSTATE_NO));
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((decimal)(Original_RNT_NO));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((decimal)(Original_GDS_ID));
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((decimal)(Original_C_ID));
-            if ((Original_RNT_DATE.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(Original_RNT_DATE.Value));
+            if ((RNT_RETURNDATE.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((System.DateTime)(RNT_RETURNDATE.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((decimal)(Original_RNT_NO));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((decimal)(Original_GDS_ID));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(Original_C_ID));
+            if ((Original_RNT_DATE.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((System.DateTime)(Original_RNT_DATE.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             if ((Original_RNT_QTY.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((decimal)(Original_RNT_QTY.Value));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((decimal)(Original_RNT_QTY.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             if ((Original_STF_ID == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_STF_ID));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_STF_ID));
             }
             if ((Original_RNTSTATE_NO == null)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_RNTSTATE_NO));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_RNTSTATE_NO));
+            }
+            if ((Original_RNT_RETURNDATE.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((System.DateTime)(Original_RNT_RETURNDATE.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -15986,8 +19037,8 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(decimal GDS_ID, decimal C_ID, global::System.Nullable<global::System.DateTime> RNT_DATE, global::System.Nullable<decimal> RNT_QTY, string STF_ID, string RNTSTATE_NO, decimal Original_RNT_NO, decimal Original_GDS_ID, decimal Original_C_ID, global::System.Nullable<global::System.DateTime> Original_RNT_DATE, global::System.Nullable<decimal> Original_RNT_QTY, string Original_STF_ID, string Original_RNTSTATE_NO) {
-            return this.Update(Original_RNT_NO, GDS_ID, C_ID, RNT_DATE, RNT_QTY, STF_ID, RNTSTATE_NO, Original_RNT_NO, Original_GDS_ID, Original_C_ID, Original_RNT_DATE, Original_RNT_QTY, Original_STF_ID, Original_RNTSTATE_NO);
+        public virtual int Update(decimal GDS_ID, decimal C_ID, global::System.Nullable<global::System.DateTime> RNT_DATE, global::System.Nullable<decimal> RNT_QTY, string STF_ID, string RNTSTATE_NO, global::System.Nullable<global::System.DateTime> RNT_RETURNDATE, decimal Original_RNT_NO, decimal Original_GDS_ID, decimal Original_C_ID, global::System.Nullable<global::System.DateTime> Original_RNT_DATE, global::System.Nullable<decimal> Original_RNT_QTY, string Original_STF_ID, string Original_RNTSTATE_NO, global::System.Nullable<global::System.DateTime> Original_RNT_RETURNDATE) {
+            return this.Update(Original_RNT_NO, GDS_ID, C_ID, RNT_DATE, RNT_QTY, STF_ID, RNTSTATE_NO, RNT_RETURNDATE, Original_RNT_NO, Original_GDS_ID, Original_C_ID, Original_RNT_DATE, Original_RNT_QTY, Original_STF_ID, Original_RNTSTATE_NO, Original_RNT_RETURNDATE);
         }
     }
     
@@ -16229,11 +19280,23 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[1];
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[2];
             this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT RNTSTATE_NO, RNTSTATE_DESC FROM B5171580.RENTSTATE";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT RNTSTATE_NO, RNTSTATE_DESC\r\nFROM B5171580.RENTSTATE\r\nWHERE RNTSTATE_DESC =" +
+                " :aa";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 20;
+            param.IsNullable = true;
+            param.SourceColumn = "RNTSTATE_DESC";
+            this._commandCollection[1].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -16255,6 +19318,23 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSet1.RENTSTATEDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.RENTSTATEDataTable dataTable = new DataSet1.RENTSTATEDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.RENTSTATEDataTable GetDataByDesc(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((aa == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
             DataSet1.RENTSTATEDataTable dataTable = new DataSet1.RENTSTATEDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -17762,11 +20842,22 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[1];
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[2];
             this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT SLVS_NO, SLVS_DESC FROM B5171580.SHELVES";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT SLVS_NO, SLVS_DESC\r\nFROM B5171580.SHELVES\r\nWHERE slvs_desc = :aa";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = "SLVS_DESC";
+            this._commandCollection[1].Parameters.Add(param);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17788,6 +20879,23 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSet1.SHELVESDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.SHELVESDataTable dataTable = new DataSet1.SHELVESDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.SHELVESDataTable GetDataByDesc(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((aa == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
             DataSet1.SHELVESDataTable dataTable = new DataSet1.SHELVESDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -18518,6 +21626,788 @@ namespace _5171580_김상원.DataSet1TableAdapters {
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class GOODS_WITH_RENTTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleDataAdapter _adapter;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleConnection _connection;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleTransaction _transaction;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public GOODS_WITH_RENTTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::Oracle.ManagedDataAccess.Client.OracleDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::Oracle.ManagedDataAccess.Client.OracleConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::Oracle.ManagedDataAccess.Client.OracleCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::Oracle.ManagedDataAccess.Client.OracleTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::Oracle.ManagedDataAccess.Client.OracleCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::Oracle.ManagedDataAccess.Client.OracleDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "GOODS_WITH_RENT";
+            tableMapping.ColumnMappings.Add("GDS_ID", "GDS_ID");
+            tableMapping.ColumnMappings.Add("GDS_IMG", "GDS_IMG");
+            tableMapping.ColumnMappings.Add("GDS_NAME", "GDS_NAME");
+            tableMapping.ColumnMappings.Add("GDS_QTY", "GDS_QTY");
+            tableMapping.ColumnMappings.Add("SLVS_NO", "SLVS_NO");
+            tableMapping.ColumnMappings.Add("GDSTYPE_NO", "GDSTYPE_NO");
+            tableMapping.ColumnMappings.Add("GDSGRADE_NO", "GDSGRADE_NO");
+            tableMapping.ColumnMappings.Add("GDSUNIT_ID", "GDSUNIT_ID");
+            tableMapping.ColumnMappings.Add("RNT_NO", "RNT_NO");
+            tableMapping.ColumnMappings.Add("C_ID", "C_ID");
+            tableMapping.ColumnMappings.Add("RNT_DATE", "RNT_DATE");
+            tableMapping.ColumnMappings.Add("RNT_QTY", "RNT_QTY");
+            tableMapping.ColumnMappings.Add("STF_ID", "STF_ID");
+            tableMapping.ColumnMappings.Add("RNTSTATE_NO", "RNTSTATE_NO");
+            tableMapping.ColumnMappings.Add("RNT_RETURNDATE", "RNT_RETURNDATE");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::Oracle.ManagedDataAccess.Client.OracleConnection();
+            this._connection.ConnectionString = global::_5171580_김상원.Properties.Settings.Default.ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[2];
+            this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT GDS_ID, GDS_IMG, GDS_NAME, GDS_QTY, SLVS_NO, GDSTYPE_NO, GDSGRADE_NO, GDSU" +
+                "NIT_ID, RNT_NO, C_ID, RNT_DATE, RNT_QTY, STF_ID, RNTSTATE_NO, RNT_RETURNDATE FRO" +
+                "M B5171580.GOODS_WITH_RENT";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT GDS_ID, GDS_IMG, GDS_NAME, GDS_QTY, SLVS_NO, GDSTYPE_NO, GDSGRADE_NO, GDSU" +
+                "NIT_ID, RNT_NO, C_ID, RNT_DATE, RNT_QTY, STF_ID, RNTSTATE_NO, RNT_RETURNDATE\r\nFR" +
+                "OM B5171580.GOODS_WITH_RENT\r\nWHERE RNTSTATE_NO = :aa";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Char;
+            param.Size = 1;
+            param.IsNullable = true;
+            param.SourceColumn = "RNTSTATE_NO";
+            this._commandCollection[1].Parameters.Add(param);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSet1.GOODS_WITH_RENTDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSet1.GOODS_WITH_RENTDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.GOODS_WITH_RENTDataTable dataTable = new DataSet1.GOODS_WITH_RENTDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.GOODS_WITH_RENTDataTable GetDataByRentState(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((aa == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
+            DataSet1.GOODS_WITH_RENTDataTable dataTable = new DataSet1.GOODS_WITH_RENTDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class REP_GOODSTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleDataAdapter _adapter;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleConnection _connection;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleTransaction _transaction;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public REP_GOODSTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::Oracle.ManagedDataAccess.Client.OracleDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::Oracle.ManagedDataAccess.Client.OracleConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::Oracle.ManagedDataAccess.Client.OracleCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::Oracle.ManagedDataAccess.Client.OracleTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::Oracle.ManagedDataAccess.Client.OracleCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::Oracle.ManagedDataAccess.Client.OracleDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "REP_GOODS";
+            tableMapping.ColumnMappings.Add("GDS_ID", "GDS_ID");
+            tableMapping.ColumnMappings.Add("GDS_IMG", "GDS_IMG");
+            tableMapping.ColumnMappings.Add("GDS_NAME", "GDS_NAME");
+            tableMapping.ColumnMappings.Add("GDS_QTY", "GDS_QTY");
+            tableMapping.ColumnMappings.Add("SLVS_NO", "SLVS_NO");
+            tableMapping.ColumnMappings.Add("GDSTYPE_NO", "GDSTYPE_NO");
+            tableMapping.ColumnMappings.Add("GDSGRADE_NO", "GDSGRADE_NO");
+            tableMapping.ColumnMappings.Add("GDSUNIT_ID", "GDSUNIT_ID");
+            tableMapping.ColumnMappings.Add("GDS_PRICE", "GDS_PRICE");
+            tableMapping.ColumnMappings.Add("GDS_MODEL", "GDS_MODEL");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::Oracle.ManagedDataAccess.Client.OracleConnection();
+            this._connection.ConnectionString = global::_5171580_김상원.Properties.Settings.Default.ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[1];
+            this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT GDS_ID, GDS_IMG, GDS_NAME, GDS_QTY, SLVS_NO, GDSTYPE_NO, GDSGRADE_NO, GDSU" +
+                "NIT_ID, GDS_PRICE, GDS_MODEL FROM B5171580.REP_GOODS";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSet1.REP_GOODSDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSet1.REP_GOODSDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.REP_GOODSDataTable dataTable = new DataSet1.REP_GOODSDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class REMAIN_GOODSTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleDataAdapter _adapter;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleConnection _connection;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleTransaction _transaction;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public REMAIN_GOODSTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::Oracle.ManagedDataAccess.Client.OracleDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::Oracle.ManagedDataAccess.Client.OracleConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::Oracle.ManagedDataAccess.Client.OracleCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::Oracle.ManagedDataAccess.Client.OracleTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::Oracle.ManagedDataAccess.Client.OracleCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::Oracle.ManagedDataAccess.Client.OracleDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "REMAIN_GOODS";
+            tableMapping.ColumnMappings.Add("GDS_NAME", "GDS_NAME");
+            tableMapping.ColumnMappings.Add("REMAINING", "REMAINING");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::Oracle.ManagedDataAccess.Client.OracleConnection();
+            this._connection.ConnectionString = global::_5171580_김상원.Properties.Settings.Default.ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[2];
+            this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT GDS_NAME, REMAINING FROM B5171580.REMAIN_GOODS";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT GDS_NAME, REMAINING\r\nFROM B5171580.REMAIN_GOODS\r\nWHERE gds_Name = :aa";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "GDS_NAME";
+            this._commandCollection[1].Parameters.Add(param);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSet1.REMAIN_GOODSDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSet1.REMAIN_GOODSDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.REMAIN_GOODSDataTable dataTable = new DataSet1.REMAIN_GOODSDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.REMAIN_GOODSDataTable GetDataByName(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((aa == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
+            DataSet1.REMAIN_GOODSDataTable dataTable = new DataSet1.REMAIN_GOODSDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class MIN_RENT_FEETableAdapter : global::System.ComponentModel.Component {
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleDataAdapter _adapter;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleConnection _connection;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleTransaction _transaction;
+        
+        private global::Oracle.ManagedDataAccess.Client.OracleCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public MIN_RENT_FEETableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::Oracle.ManagedDataAccess.Client.OracleDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::Oracle.ManagedDataAccess.Client.OracleConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::Oracle.ManagedDataAccess.Client.OracleCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::Oracle.ManagedDataAccess.Client.OracleTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::Oracle.ManagedDataAccess.Client.OracleCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::Oracle.ManagedDataAccess.Client.OracleDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "MIN_RENT_FEE";
+            tableMapping.ColumnMappings.Add("GDS_NAME", "GDS_NAME");
+            tableMapping.ColumnMappings.Add("GDS_MIN_FEE", "GDS_MIN_FEE");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::Oracle.ManagedDataAccess.Client.OracleConnection();
+            this._connection.ConnectionString = global::_5171580_김상원.Properties.Settings.Default.ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::Oracle.ManagedDataAccess.Client.OracleCommand[2];
+            this._commandCollection[0] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT GDS_NAME, GDS_MIN_FEE FROM B5171580.MIN_RENT_FEE";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::Oracle.ManagedDataAccess.Client.OracleCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT GDS_NAME, GDS_MIN_FEE\r\nFROM B5171580.MIN_RENT_FEE\r\nWHERE GDS_NAME = :aa";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            global::Oracle.ManagedDataAccess.Client.OracleParameter param = new global::Oracle.ManagedDataAccess.Client.OracleParameter();
+            param.ParameterName = ":aa";
+            param.OracleDbTypeEx = global::Oracle.ManagedDataAccess.Client.OracleDbType.Varchar2;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = "GDS_NAME";
+            this._commandCollection[1].Parameters.Add(param);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSet1.MIN_RENT_FEEDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSet1.MIN_RENT_FEEDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.MIN_RENT_FEEDataTable dataTable = new DataSet1.MIN_RENT_FEEDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.MIN_RENT_FEEDataTable GetDataByName(string aa) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((aa == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(aa));
+            }
+            DataSet1.MIN_RENT_FEEDataTable dataTable = new DataSet1.MIN_RENT_FEEDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -18978,21 +22868,21 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateUpdatedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._gOODSGRADETableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.GOODSGRADE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._gOODSGRADETableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._gOODSUNITTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.GOODSUNIT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._gOODSUNITTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._sHELVESTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.SHELVES.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._sHELVESTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -19005,30 +22895,12 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._gOODSGRADETableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.GOODSGRADE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._sHELVESTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.SHELVES.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._gOODSGRADETableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._rENTSTATETableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.RENTSTATE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._rENTSTATETableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._sTAFFTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.STAFF.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._sTAFFTableAdapter.Update(updatedRows));
+                    result = (result + this._sHELVESTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -19050,6 +22922,33 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._sTAFFTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.STAFF.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._sTAFFTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._rENTSTATETableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.RENTSTATE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._rENTSTATETableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._rENTTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.RENT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._rENTTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._gOODSSTORETableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.GOODSSTORE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -19068,39 +22967,12 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._rENTTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.RENT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._bLACKLISTTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.BLACKLIST.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._rENTTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._dISCARDINGGOODSTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.DISCARDINGGOODS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._dISCARDINGGOODSTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._oVERDUETableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.OVERDUE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._oVERDUETableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._bUYINGGOODSTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.BUYINGGOODS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._bUYINGGOODSTableAdapter.Update(updatedRows));
+                    result = (result + this._bLACKLISTTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -19113,21 +22985,39 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._oVERDUETableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.OVERDUE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._oVERDUETableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._dISCARDINGGOODSTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.DISCARDINGGOODS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._dISCARDINGGOODSTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._bUYINGGOODSTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.BUYINGGOODS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._bUYINGGOODSTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._rEVIEWSTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.REVIEWS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._rEVIEWSTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._bLACKLISTTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.BLACKLIST.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._bLACKLISTTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -19141,19 +23031,19 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateInsertedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._gOODSGRADETableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.GOODSGRADE.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._gOODSGRADETableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._gOODSUNITTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.GOODSUNIT.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._gOODSUNITTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._sHELVESTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.SHELVES.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._sHELVESTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -19165,27 +23055,11 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._gOODSGRADETableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.GOODSGRADE.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._sHELVESTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.SHELVES.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._gOODSGRADETableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._rENTSTATETableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.RENTSTATE.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._rENTSTATETableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._sTAFFTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.STAFF.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._sTAFFTableAdapter.Update(addedRows));
+                    result = (result + this._sHELVESTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -19205,6 +23079,30 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._sTAFFTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.STAFF.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._sTAFFTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._rENTSTATETableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.RENTSTATE.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._rENTSTATETableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._rENTTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.RENT.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._rENTTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._gOODSSTORETableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.GOODSSTORE.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -19221,35 +23119,11 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._rENTTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.RENT.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._bLACKLISTTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.BLACKLIST.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._rENTTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._dISCARDINGGOODSTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.DISCARDINGGOODS.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._dISCARDINGGOODSTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._oVERDUETableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.OVERDUE.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._oVERDUETableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._bUYINGGOODSTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.BUYINGGOODS.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._bUYINGGOODSTableAdapter.Update(addedRows));
+                    result = (result + this._bLACKLISTTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -19261,19 +23135,35 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._oVERDUETableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.OVERDUE.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._oVERDUETableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._dISCARDINGGOODSTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.DISCARDINGGOODS.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._dISCARDINGGOODSTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._bUYINGGOODSTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.BUYINGGOODS.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._bUYINGGOODSTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._rEVIEWSTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.REVIEWS.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._rEVIEWSTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._bLACKLISTTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.BLACKLIST.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._bLACKLISTTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -19287,27 +23177,11 @@ namespace _5171580_김상원.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._bLACKLISTTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.BLACKLIST.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._bLACKLISTTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._rEVIEWSTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.REVIEWS.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._rEVIEWSTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._rESERVATIONSTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.RESERVATIONS.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._rESERVATIONSTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -19319,14 +23193,6 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._oVERDUETableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.OVERDUE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._oVERDUETableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._dISCARDINGGOODSTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.DISCARDINGGOODS.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -19335,11 +23201,27 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._rENTTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.RENT.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._oVERDUETableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.OVERDUE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._rENTTableAdapter.Update(deletedRows));
+                    result = (result + this._oVERDUETableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._rESERVATIONSTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.RESERVATIONS.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._rESERVATIONSTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._bLACKLISTTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.BLACKLIST.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._bLACKLISTTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -19359,6 +23241,30 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
+            if ((this._rENTTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.RENT.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._rENTTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._rENTSTATETableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.RENTSTATE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._rENTSTATETableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._sTAFFTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.STAFF.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._sTAFFTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._gOODSTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.GOODS.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -19375,27 +23281,11 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._sTAFFTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.STAFF.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._sHELVESTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.SHELVES.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._sTAFFTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._rENTSTATETableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.RENTSTATE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._rENTSTATETableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._gOODSGRADETableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.GOODSGRADE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._gOODSGRADETableAdapter.Update(deletedRows));
+                    result = (result + this._sHELVESTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -19407,19 +23297,19 @@ namespace _5171580_김상원.DataSet1TableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._sHELVESTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.SHELVES.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._sHELVESTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._gOODSUNITTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.GOODSUNIT.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._gOODSUNITTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._gOODSGRADETableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.GOODSGRADE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._gOODSGRADETableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }

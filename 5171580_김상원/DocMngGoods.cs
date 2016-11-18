@@ -18,7 +18,7 @@ namespace _5171580_김상원
         {
             InitializeComponent();
 
-            //gridControl.DataSource = GetDataSource();
+            goodsTableAdapter1.Fill(dataSet1.GOODS);
         }
         void windowsUIButtonPanel_ButtonClick(object sender, DevExpress.XtraBars.Docking2010.ButtonEventArgs e)
         {
@@ -26,21 +26,40 @@ namespace _5171580_김상원
             switch (button)
             {
                 case "구매":
+                    new BuyingForm().ShowDialog();
                     break;
                 case "수정":
-                    
+                    DataRowView view = gOODSBindingSource.Current as DataRowView;
+                    DataSet1.GOODSRow data = view.Row as DataSet1.GOODSRow;
+                    new BuyingForm(data).ShowDialog();
                     break;
                 case "폐기":
+                    if (MessageBox.Show("폐기하시겠습니까?", "Warning", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                    {
+                        try
+                        {
+                            gOODSBindingSource.EndEdit();
+                            gOODSBindingSource.RemoveCurrent();
+                            goodsTableAdapter1.Update(dataSet1.GOODS);
+                            goodsTableAdapter1.Fill(dataSet1.GOODS);
+
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Failed");
+                        }
+                    }
                     break;
-                case "새로고침":
-                    break;
+                case "새로고침": break;
                 case "프린트":
                     gridControl.ShowRibbonPrintPreview();
                     break;
             }
-
+            goodsTableAdapter1.Fill(dataSet1.GOODS);
+            gridControl.ResetBindings();
         }
-        public BindingList<Customer> GetDataSource()
+
+        /*public BindingList<Customer> GetDataSource()
         {
             BindingList<Customer> result = new BindingList<Customer>();
             result.Add(new Customer()
@@ -77,6 +96,6 @@ namespace _5171580_김상원
             [Display(Name = "Zip Code")]
             public string ZipCode { get; set; }
             public string Phone { get; set; }
-        }
+        }*/
     }
 }

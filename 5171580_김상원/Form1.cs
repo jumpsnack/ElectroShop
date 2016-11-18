@@ -23,6 +23,7 @@ namespace _5171580_김상원
     public partial class Form1 : Form
     {
         public static OracleConnection oracleConnection;
+        public static string account;
         public Form1()
         {
             InitializeComponent();
@@ -181,7 +182,7 @@ namespace _5171580_김상원
                     case "Employee":
                         lb_permission.Text = "Manager";
                         lb_join.Text = "";
-                        lb_join.Enabled = false;tb_email.Text = "ID";
+                        lb_join.Enabled = false; tb_email.Text = "ID";
                         break;
                     case "Customer":
                         lb_permission.Text = "Customer";
@@ -233,7 +234,9 @@ namespace _5171580_김상원
                         new CustomerForm().ShowDialog();
                         this.Close();
                     }
-                    break;}
+                    break;
+            }
+            account = tb_email.Text;
         }
 
         bool CheckCustomerPassword()
@@ -243,7 +246,7 @@ namespace _5171580_김상원
             string email = tb_email.Text;
             string password = tb_password.Text;
 
-            if (email.Length*password.Length < 1)
+            if (email.Length * password.Length < 1)
             {
                 return false;
             }
@@ -251,8 +254,10 @@ namespace _5171580_김상원
             foreach (DataRow data in customerDataTable.Rows)
             {
                 if (data["c_email"].ToString() == email)
-                {if (data["c_pwd"].ToString() == NewAccount.EncryptMD5(password + data["c_birth"].ToString()))
-                    {return true;
+                {
+                    if (data["c_pwd"].ToString() == NewAccount.EncryptMD5(password + data["c_birth"].ToString()))
+                    {
+                        return true;
                     }
                 }
             }
@@ -266,12 +271,12 @@ namespace _5171580_김상원
 
             string id = tb_email.Text;
             string password = tb_password.Text;
-            if (id.Length*password.Length < 1)
+            if (id.Length * password.Length < 1)
             {
                 return false;
             }
 
-           DataSet1.MANAGERRow row =  managerDataTable.FindByMNG_ID(id);
+            DataSet1.MANAGERRow row = managerDataTable.FindByMNG_ID(id);
             if (row != null)
             {
                 if (row.MNG_PIN == password)
@@ -289,7 +294,7 @@ namespace _5171580_김상원
             string id = tb_email.Text;
 
             string password = tb_password.Text;
-            if (id.Length*password.Length < 1)
+            if (id.Length * password.Length < 1)
             {
                 return false;
             }
@@ -307,7 +312,7 @@ namespace _5171580_김상원
 
         private void ActionPasswordBox(object sender, KeyPressEventArgs e)
         {
-            ActionLabelLogin(null,null);
+            ActionLabelLogin(null, null);
         }
 
     }

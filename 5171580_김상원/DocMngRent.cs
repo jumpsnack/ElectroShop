@@ -17,8 +17,15 @@ namespace _5171580_김상원
         public DocMngRent()
         {
             InitializeComponent();
+            gOODSGRADETableAdapter.Fill(dataSet1.GOODSGRADE);}
+
+        private void ActionButtonSync(object sender, EventArgs e)
+        {
+            gOODSGRADEBindingSource.EndEdit();
+            if (gOODSGRADETableAdapter.Update(dataSet1.GOODSGRADE) > 0)
+            {
+                MessageBox.Show("동기화 성공");
             }
-
-
+        }
     }
 }

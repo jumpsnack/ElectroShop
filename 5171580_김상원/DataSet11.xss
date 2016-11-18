@@ -10,7 +10,7 @@
     <Shape ID="DesignTable:BUYINGGOODS" ZOrder="38" X="329" Y="70" Height="172" Width="236" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
     <Shape ID="DesignTable:CUSTOMERS" ZOrder="37" X="601" Y="1479" Height="210" Width="219" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="159" />
     <Shape ID="DesignTable:DISCARDINGGOODS" ZOrder="36" X="329" Y="497" Height="134" Width="266" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
-    <Shape ID="DesignTable:GOODS" ZOrder="35" X="70" Y="70" Height="248" Width="189" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="197" />
+    <Shape ID="DesignTable:GOODS" ZOrder="35" X="70" Y="70" Height="267" Width="189" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="216" />
     <Shape ID="DesignTable:GOODSGRADE" ZOrder="34" X="329" Y="1071" Height="172" Width="231" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
     <Shape ID="DesignTable:GOODSSTORE" ZOrder="33" X="635" Y="70" Height="134" Width="227" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
     <Shape ID="DesignTable:GOODSTYPE" ZOrder="32" X="329" Y="886" Height="115" Width="218" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
@@ -81,7 +81,7 @@
       <RoutePoints>
         <Point>
           <X>242</X>
-          <Y>318</Y>
+          <Y>337</Y>
         </Point>
         <Point>
           <X>242</X>
@@ -121,7 +121,7 @@
         </Point>
         <Point>
           <X>234</X>
-          <Y>318</Y>
+          <Y>337</Y>
         </Point>
       </RoutePoints>
     </Connector>
@@ -137,7 +137,7 @@
         </Point>
         <Point>
           <X>226</X>
-          <Y>318</Y>
+          <Y>337</Y>
         </Point>
       </RoutePoints>
     </Connector>
@@ -153,7 +153,7 @@
         </Point>
         <Point>
           <X>180</X>
-          <Y>318</Y>
+          <Y>337</Y>
         </Point>
       </RoutePoints>
     </Connector>
@@ -169,7 +169,7 @@
         </Point>
         <Point>
           <X>172</X>
-          <Y>318</Y>
+          <Y>337</Y>
         </Point>
       </RoutePoints>
     </Connector>
@@ -189,7 +189,7 @@
       <RoutePoints>
         <Point>
           <X>164</X>
-          <Y>318</Y>
+          <Y>337</Y>
         </Point>
         <Point>
           <X>164</X>
@@ -217,7 +217,7 @@
       <RoutePoints>
         <Point>
           <X>156</X>
-          <Y>318</Y>
+          <Y>337</Y>
         </Point>
         <Point>
           <X>156</X>
@@ -293,7 +293,7 @@
       <RoutePoints>
         <Point>
           <X>140</X>
-          <Y>318</Y>
+          <Y>337</Y>
         </Point>
         <Point>
           <X>140</X>
@@ -321,7 +321,7 @@
       <RoutePoints>
         <Point>
           <X>148</X>
-          <Y>318</Y>
+          <Y>337</Y>
         </Point>
         <Point>
           <X>148</X>
